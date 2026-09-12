@@ -64,9 +64,20 @@ export const works = [
   {
     "index": "01",
     "kind": "tool",
+    "sourcePath": "skills/muse10-nail-visuals",
     "meta": "AI AGENT / SKILL",
-    "title": "Product Evidence Deconstruction",
-    "copy": "一个证据优先的产品拆解 Skill：先识别产品类型并检查证据是否完整，再按用户层、技术层、模型层、数据层逐层分析，最终输出可审计的 HTML 报告。",
+    "title": "Muse10 美甲作品展示",
+    "copy": "从参考照片生成十片母版、双手佩戴与细节特写，并制作可交互预览",
+    "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/muse10-nail-visuals",
+    "action": "查看开源 Skill"
+  },
+  {
+    "index": "02",
+    "kind": "tool",
+    "sourcePath": "skills/product-evidence-deconstruction",
+    "meta": "AI AGENT / SKILL",
+    "title": "产品证据拆解",
+    "copy": "基于真实证据，按用户、技术、模型、数据四层拆解数字产品",
     "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/product-evidence-deconstruction",
     "action": "查看开源 Skill"
   }
@@ -289,4 +300,3 @@ export const intro = [
     "cursor": true
   }
 ];
-

@@ -67,7 +67,7 @@ export const works = [
     "meta": "PERSONAL PROJECT · 02",
     "title": "幻想之境",
     "detailUrl": "https://huanxiangzhijing.store/",
-    "copy": "原创小说、热点二创、AI 广告剧本。三个开场，三种可能。",
+    "copy": "AI 互动叙事平台，融合 20 个原创故事世界与角色陪伴。自由选择开场与续写分支，在互动中塑造属于自己的故事。",
     "url": "https://huanxiangzhijing.store/",
     "action": "打开幻想之境",
     "cover": "/assets/huanxiangzhijing-poster.jpg"

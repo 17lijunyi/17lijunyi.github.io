@@ -54,6 +54,17 @@ export const works = [
     "index": "01",
     "kind": "product",
     "meta": "PERSONAL PROJECT · 01",
+    "title": "Muse10",
+    "detailUrl": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
+    "copy": "高端美甲与穿戴甲定制品牌，探索 AI 定制与 AI 试戴，将个性化设计与上手预览融入专属美甲体验。",
+    "url": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
+    "action": "打开 Muse10",
+    "cover": "/assets/muse10-cover.png"
+  },
+  {
+    "index": "02",
+    "kind": "product",
+    "meta": "PERSONAL PROJECT · 02",
     "title": "幻想之境",
     "detailUrl": "https://huanxiangzhijing.store/",
     "copy": "原创小说、热点二创、AI 广告剧本。三个开场，三种可能。",

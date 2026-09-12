@@ -1,0 +1,292 @@
+import {normalizeArticles} from "./article-utils.js";
+// Profile: https://17lijunyi.github.io/ and its embedded GitHub README.
+// Articles: all 12 published records from 少玩多学AI, verified on 2026-09-12.
+export const profile = {
+  "name": "李俊祎",
+  "latin": "LI JUNYI",
+  "user": "lijunyi",
+  "host": "ljy-mac",
+  "os": "lijunyi OS",
+  "role": "AI Product Manager",
+  "tagline": "把 AI 做成真正有人用的产品",
+  "summary": "AI 训练师 → AI 产品经理",
+  "bio": "做过数据、SFT 和模型评测，也在学习原型、Agent 和 AI 产品设计。",
+  "byline": "公众号「少玩多学AI」作者",
+  "email": "lijunyi2026setoff@gmail.com",
+  "github": "https://github.com/17lijunyi",
+  "website": "https://17lijunyi.github.io/",
+  "echo": "AI 产品 × Agent × RAG",
+  "contactIntro": "欢迎通过邮箱交流 AI 产品、Agent 与 RAG，也可以继续查看我的项目与文章。",
+  "contacts": [
+    {
+      "label": "EMAIL",
+      "value": "lijunyi2026setoff@gmail.com",
+      "href": "mailto:lijunyi2026setoff@gmail.com",
+      "icon": "email",
+      "external": false
+    },
+    {
+      "label": "GITHUB",
+      "value": "17lijunyi",
+      "href": "https://github.com/17lijunyi",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "WEBSITE",
+      "value": "17lijunyi.github.io",
+      "href": "https://17lijunyi.github.io/",
+      "icon": "website",
+      "external": true
+    },
+    {
+      "label": "WECHAT",
+      "value": "少玩多学AI",
+      "view": "notes",
+      "icon": "notes",
+      "external": false
+    }
+  ]
+};
+
+export const works = [
+  {
+    "index": "01",
+    "kind": "product",
+    "meta": "PERSONAL PROJECT · 01",
+    "title": "幻想之境",
+    "detailUrl": "https://huanxiangzhijing.store/",
+    "copy": "原创小说、热点二创、AI 广告剧本。三个开场，三种可能。",
+    "url": "https://huanxiangzhijing.store/",
+    "action": "打开幻想之境",
+    "cover": "/assets/huanxiangzhijing-poster.jpg"
+  },
+  {
+    "index": "01",
+    "kind": "tool",
+    "meta": "AI AGENT / SKILL",
+    "title": "Product Evidence Deconstruction",
+    "copy": "一个证据优先的产品拆解 Skill：先识别产品类型并检查证据是否完整，再按用户层、技术层、模型层、数据层逐层分析，最终输出可审计的 HTML 报告。",
+    "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/product-evidence-deconstruction",
+    "action": "查看开源 Skill"
+  }
+];
+
+const articleEntries = [
+  {
+    "id": "wechat-2247483719-1",
+    "label": "马斯克给Grok Bot配了台电脑，打工人的日常要变了？",
+    "url": "https://mp.weixin.qq.com/s/e67L4DW5NmBlgGzrlwAU0g",
+    "date": "2026-09-11",
+    "publishedAt": "2026-09-11T20:10:45+08:00",
+    "cover": "/assets/articles/wechat-2247483719-1.jpg"
+  },
+  {
+    "id": "wechat-2247483715-1",
+    "label": "GPT-6开低档，凭什么比5.6开高档还强？",
+    "url": "https://mp.weixin.qq.com/s/e7vnDgcA9oXrec8YquB6eA",
+    "date": "2026-09-10",
+    "publishedAt": "2026-09-10T22:25:53+08:00",
+    "cover": "/assets/articles/wechat-2247483715-1.jpg"
+  },
+  {
+    "id": "wechat-2247483711-1",
+    "label": "OpenAI喊出AGI，GPT-6到底配不配？",
+    "url": "https://mp.weixin.qq.com/s/LYRakFpD6b0FThw7EDVdnQ",
+    "date": "2026-09-09",
+    "publishedAt": "2026-09-09T22:54:40+08:00",
+    "cover": "/assets/articles/wechat-2247483711-1.jpg"
+  },
+  {
+    "id": "wechat-2247483707-1",
+    "label": "从凭感觉选模型，到用数据做决策",
+    "url": "https://mp.weixin.qq.com/s/uOE2XZh7eQPFw-mmheuOHQ",
+    "date": "2026-09-07",
+    "publishedAt": "2026-09-07T20:25:13+08:00",
+    "cover": "/assets/articles/wechat-2247483707-1.jpg"
+  },
+  {
+    "id": "wechat-2247483701-1",
+    "label": "一文看懂RAG知识库单体架构：Dify、LangChain、LangGraph、RAGFlow对比",
+    "url": "https://mp.weixin.qq.com/s/6pF4HvMz2jLM4M0gKHmzjA",
+    "date": "2026-09-06",
+    "publishedAt": "2026-09-06T22:09:10+08:00",
+    "cover": "/assets/articles/wechat-2247483701-1.jpg"
+  },
+  {
+    "id": "wechat-2247483695-1",
+    "label": "Astra 还没用明白，下一代 GPT 的传闻又来了",
+    "url": "https://mp.weixin.qq.com/s/JYIVSnV8LrfZfqGWZRr__Q",
+    "date": "2026-09-05",
+    "publishedAt": "2026-09-05T22:33:07+08:00",
+    "cover": "/assets/articles/wechat-2247483695-1.jpg"
+  },
+  {
+    "id": "wechat-2247483691-1",
+    "label": "GPT-6来了，AI的“实习期”该结束了吗？",
+    "url": "https://mp.weixin.qq.com/s/Oe91eF9mcdVoRIOtFHVeLg",
+    "date": "2026-09-04",
+    "publishedAt": "2026-09-04T23:05:57+08:00",
+    "cover": "/assets/articles/wechat-2247483691-1.jpg"
+  },
+  {
+    "id": "rag-vs-long-context",
+    "label": "大模型都能读长文了，为什么还要折腾 RAG？",
+    "url": "https://mp.weixin.qq.com/s/DplTj9vMjYJqkRgItC2wKw",
+    "date": "2026-09-02",
+    "publishedAt": "2026-09-02T21:54:55+08:00",
+    "cover": "/assets/articles/rag-vs-long-context.jpg"
+  },
+  {
+    "id": "ai-product-from-demo-to-use",
+    "label": "为什么你的 AI 产品能演示，却没人愿意用",
+    "url": "https://mp.weixin.qq.com/s/HGy1D2sbHV1HkyaVMNjPKg",
+    "date": "2026-08-31",
+    "publishedAt": "2026-08-31T21:54:19+08:00",
+    "cover": "/assets/articles/ai-product-from-demo-to-use.jpg"
+  },
+  {
+    "id": "coding-agent-quotas",
+    "label": "同一个周末，一家偷偷降额，一家悄悄加量：Coding Agent 开战了。",
+    "url": "https://mp.weixin.qq.com/s/3yaIhqYcRSJSYZ7GS4x13Q",
+    "date": "2026-08-30",
+    "publishedAt": "2026-08-30T23:54:19+08:00",
+    "cover": "/assets/articles/coding-agent-quotas.jpg"
+  },
+  {
+    "id": "agent-runtime",
+    "label": "从OpenClaw到Codex，Agent竞争换到了运行时",
+    "url": "https://mp.weixin.qq.com/s/5-mhfMwIeQ3sC9w_GG73eg",
+    "date": "2026-08-29",
+    "publishedAt": "2026-08-29T20:16:29+08:00",
+    "cover": "/assets/articles/agent-runtime.jpg"
+  },
+  {
+    "id": "wechat-2247483660-1",
+    "label": "大家在吃孙哥的瓜，我在他的 GitHub 项目里学会了怎么造 Skill。",
+    "url": "https://mp.weixin.qq.com/s/zkaF4_2Ht-VvYutZvlXesg",
+    "date": "2026-08-28",
+    "publishedAt": "2026-08-28T23:41:26+08:00",
+    "cover": "/assets/articles/wechat-2247483660-1.jpg"
+  }
+];
+
+export const notes = normalizeArticles(articleEntries);
+
+export const focus = [
+  {
+    "input": "AI 产品",
+    "output": "真实需求",
+    "detail": "从真实需求出发，思考什么才是真正好用。",
+    "tone": "blue"
+  },
+  {
+    "input": "Agent",
+    "output": "实际任务",
+    "detail": "关注智能体在实际任务中的作用。",
+    "tone": "green"
+  },
+  {
+    "input": "RAG",
+    "output": "具体问题",
+    "detail": "让知识服务于具体问题。",
+    "tone": "amber"
+  }
+];
+
+export const boot = [
+  {
+    "kind": "title",
+    "text": "lijunyi OS v2.0.0 — Clear Light"
+  },
+  {
+    "kind": "ok",
+    "text": "加载产品内核 product-thinking.ai"
+  },
+  {
+    "kind": "ok",
+    "text": "挂载 /products （AI 产品）"
+  },
+  {
+    "kind": "ok",
+    "text": "挂载 /agents （智能体）"
+  },
+  {
+    "kind": "ok",
+    "text": "挂载 /knowledge （RAG）"
+  },
+  {
+    "kind": "ok",
+    "text": "同步方法：BUILD → TEST → SHIP → LEARN"
+  },
+  {
+    "kind": "ok",
+    "text": "载入实践经历：数据 · SFT · 模型评测"
+  },
+  {
+    "kind": "ok",
+    "text": "连接公开创作：少玩多学AI"
+  },
+  {
+    "kind": "ok",
+    "text": "启动个人作品集 portfolio.app"
+  },
+  {
+    "kind": "login",
+    "text": "login: lijunyi"
+  }
+];
+
+export const intro = [
+  {
+    "kind": "cmd",
+    "text": "whoami"
+  },
+  {
+    "kind": "out",
+    "text": "李俊祎 · AI Product Manager"
+  },
+  {
+    "kind": "blank"
+  },
+  {
+    "kind": "cmd",
+    "text": "cat about.md"
+  },
+  {
+    "kind": "out",
+    "text": "把 AI 做成真正有人用的产品"
+  },
+  {
+    "kind": "out",
+    "text": "从 AI 训练师到 AI 产品经理"
+  },
+  {
+    "kind": "out",
+    "text": "做过数据、SFT 和模型评测，也在学习原型、Agent 和 AI 产品设计。"
+  },
+  {
+    "kind": "out",
+    "text": "公众号「少玩多学AI」作者"
+  },
+  {
+    "kind": "blank"
+  },
+  {
+    "kind": "cmd",
+    "text": "echo \"AI 产品 × Agent × RAG\""
+  },
+  {
+    "kind": "gold",
+    "text": "AI 产品 × Agent × RAG"
+  },
+  {
+    "kind": "blank"
+  },
+  {
+    "kind": "cmd",
+    "text": "open lijunyi.os",
+    "cursor": true
+  }
+];
+

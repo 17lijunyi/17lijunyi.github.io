@@ -1,0 +1,50 @@
+/* Content-specific adjustments; the reference layout is preserved. */
+.profile-bio {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+  margin-top: 10px;
+  max-width: 34ch;
+}
+.profile-bio + .handwritten-formula { margin-top: 14px; }
+.identity-panel .hero-actions { margin-top: 16px; padding-top: 16px; }
+.work-tool-card h2 { overflow-wrap: anywhere; }
+.contact-channels button {
+  width: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 13px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+.contact-channels button:hover { color: var(--blue); }
+.contact-channels strong { overflow-wrap: anywhere; }
+.project-cover-text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px;
+  color: var(--ink);
+  background: var(--blue-soft);
+}
+.project-cover-text small { font: 10px var(--mono); }
+.project-cover-text strong { font-size: 32px; }
+.project-cover-text span { font-size: 15px; }
+@media (min-width: 901px) and (max-height: 760px) {
+  .identity-panel { padding-top: 28px; }
+  .identity-rule { margin-block: 12px; }
+  .identity-panel .hero-actions { margin-top: 12px; padding-top: 12px; }
+}
+@media (max-width: 900px) {
+  .work-showcase { min-height: 650px; }
+}

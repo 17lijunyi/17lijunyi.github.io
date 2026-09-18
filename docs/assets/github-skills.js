@@ -42,11 +42,11 @@ function card(item) {
     kind: "tool",
     sourcePath: item.sourcePath,
     revision: typeof item.revision === "string" ? item.revision : "",
-    meta: "AI AGENT / SKILL",
+    meta: "智能体 / 技能",
     title: item.title.trim().slice(0, 120),
     copy: item.copy.trim().slice(0, 600),
     url: `https://github.com/${repository}/tree/main/${item.sourcePath}`,
-    action: "查看开源 Skill"
+    action: "查看开源技能"
   };
 }
 
@@ -117,7 +117,7 @@ export function createSkillStore(fallback, {
           return {sourcePath, title, copy, revision};
         } catch {
           // Keep a known description if a metadata request fails; retry it later.
-          return old ?? {sourcePath, title: sourcePath.split("/").pop(), copy: "查看此 Skill 的功能介绍与使用方法。"};
+          return old ?? {sourcePath, title: sourcePath.split("/").pop(), copy: "查看此技能的功能介绍与使用方法。"};
         }
       }));
       const updated = catalogue(next);

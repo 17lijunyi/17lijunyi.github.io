@@ -3,44 +3,44 @@ import {normalizeArticles} from "./article-utils.js";
 // Articles: all 12 published records from 少玩多学AI, verified on 2026-09-12.
 export const profile = {
   "name": "李俊祎",
-  "latin": "LI JUNYI",
+  "latin": "李俊祎",
   "user": "lijunyi",
   "host": "ljy-mac",
-  "os": "lijunyi OS",
-  "role": "AI Product Manager",
+  "os": "李俊祎 OS",
+  "role": "AI 产品经理",
   "tagline": "把 AI 做成真正有人用的产品",
   "summary": "AI 训练师 → AI 产品经理",
-  "bio": "做过数据、SFT 和模型评测，也在学习原型、Agent 和 AI 产品设计。",
+  "bio": "做过数据、SFT 和模型评测，也在学习原型、智能体和 AI 产品设计。",
   "byline": "公众号「少玩多学AI」作者",
   "email": "lijunyi2026setoff@gmail.com",
   "github": "https://github.com/17lijunyi",
   "website": "https://17lijunyi.github.io/",
-  "echo": "AI 产品 × Agent × RAG",
-  "contactIntro": "欢迎通过邮箱交流 AI 产品、Agent 与 RAG，也可以继续查看我的项目与文章。",
+  "echo": "AI 产品 × 智能体 × 知识库",
+  "contactIntro": "欢迎通过邮箱交流 AI 产品、智能体与知识库，也可以继续查看我的项目与文章。",
   "contacts": [
     {
-      "label": "EMAIL",
+      "label": "邮箱",
       "value": "lijunyi2026setoff@gmail.com",
       "href": "mailto:lijunyi2026setoff@gmail.com",
       "icon": "email",
       "external": false
     },
     {
-      "label": "GITHUB",
+      "label": "GitHub",
       "value": "17lijunyi",
       "href": "https://github.com/17lijunyi",
       "icon": "github",
       "external": true
     },
     {
-      "label": "WEBSITE",
+      "label": "个人网站",
       "value": "17lijunyi.github.io",
       "href": "https://17lijunyi.github.io/",
       "icon": "website",
       "external": true
     },
     {
-      "label": "WECHAT",
+      "label": "微信公众号",
       "value": "少玩多学AI",
       "view": "notes",
       "icon": "notes",
@@ -53,7 +53,7 @@ export const works = [
   {
     "index": "01",
     "kind": "product",
-    "meta": "PERSONAL PROJECT · 01",
+    "meta": "个人项目 · 01",
     "title": "Muse10",
     "detailUrl": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
     "copy": "高端美甲与穿戴甲定制品牌，探索 AI 定制与 AI 试戴，将个性化设计与上手预览融入专属美甲体验。",
@@ -64,7 +64,7 @@ export const works = [
   {
     "index": "02",
     "kind": "product",
-    "meta": "PERSONAL PROJECT · 02",
+    "meta": "个人项目 · 02",
     "title": "幻想之境",
     "detailUrl": "https://huanxiangzhijing.store/",
     "copy": "AI 互动叙事平台，融合 20 个原创故事世界与角色陪伴。自由选择开场与续写分支，在互动中塑造属于自己的故事。",
@@ -76,21 +76,21 @@ export const works = [
     "index": "01",
     "kind": "tool",
     "sourcePath": "skills/muse10-nail-visuals",
-    "meta": "AI AGENT / SKILL",
+    "meta": "智能体 / 技能",
     "title": "Muse10 美甲作品展示",
     "copy": "从参考照片生成十片母版、双手佩戴与细节特写，并制作可交互预览",
     "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/muse10-nail-visuals",
-    "action": "查看开源 Skill"
+    "action": "查看开源技能"
   },
   {
     "index": "02",
     "kind": "tool",
     "sourcePath": "skills/product-evidence-deconstruction",
-    "meta": "AI AGENT / SKILL",
+    "meta": "智能体 / 技能",
     "title": "产品证据拆解",
     "copy": "基于真实证据，按用户、技术、模型、数据四层拆解数字产品",
     "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/product-evidence-deconstruction",
-    "action": "查看开源 Skill"
+    "action": "查看开源技能"
   }
 ];
 
@@ -203,13 +203,13 @@ export const focus = [
     "tone": "blue"
   },
   {
-    "input": "Agent",
+    "input": "智能体",
     "output": "实际任务",
     "detail": "关注智能体在实际任务中的作用。",
     "tone": "green"
   },
   {
-    "input": "RAG",
+    "input": "知识库",
     "output": "具体问题",
     "detail": "让知识服务于具体问题。",
     "tone": "amber"
@@ -219,7 +219,7 @@ export const focus = [
 export const boot = [
   {
     "kind": "title",
-    "text": "lijunyi OS v2.0.0 — Clear Light"
+    "text": "李俊祎 OS v2.0.0 — 清透浅色"
   },
   {
     "kind": "ok",
@@ -235,11 +235,11 @@ export const boot = [
   },
   {
     "kind": "ok",
-    "text": "挂载 /knowledge （RAG）"
+    "text": "挂载 /knowledge （知识库）"
   },
   {
     "kind": "ok",
-    "text": "同步方法：BUILD → TEST → SHIP → LEARN"
+    "text": "同步方法：构建 → 验证 → 交付 → 学习"
   },
   {
     "kind": "ok",
@@ -255,7 +255,7 @@ export const boot = [
   },
   {
     "kind": "login",
-    "text": "login: lijunyi"
+    "text": "登录用户：lijunyi"
   }
 ];
 
@@ -266,7 +266,7 @@ export const intro = [
   },
   {
     "kind": "out",
-    "text": "李俊祎 · AI Product Manager"
+    "text": "李俊祎 · AI 产品经理"
   },
   {
     "kind": "blank"
@@ -285,7 +285,7 @@ export const intro = [
   },
   {
     "kind": "out",
-    "text": "做过数据、SFT 和模型评测，也在学习原型、Agent 和 AI 产品设计。"
+    "text": "做过数据、SFT 和模型评测，也在学习原型、智能体和 AI 产品设计。"
   },
   {
     "kind": "out",
@@ -296,11 +296,11 @@ export const intro = [
   },
   {
     "kind": "cmd",
-    "text": "echo \"AI 产品 × Agent × RAG\""
+    "text": "echo \"AI 产品 × 智能体 × 知识库\""
   },
   {
     "kind": "gold",
-    "text": "AI 产品 × Agent × RAG"
+    "text": "AI 产品 × 智能体 × 知识库"
   },
   {
     "kind": "blank"

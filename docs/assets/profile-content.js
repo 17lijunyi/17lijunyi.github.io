@@ -84,7 +84,7 @@ export const works = [
     "cover": "/assets/huanxiangzhijing-poster.jpg"
   },
   {
-    "kind": "product",
+    "kind": "tool",
     "title": "看山知识库",
     "detailUrl": "https://github.com/17lijunyi/kanshan-kb",
     "url": "https://github.com/17lijunyi/kanshan-kb",
@@ -93,7 +93,7 @@ export const works = [
     "coverEyebrow": "创作 · 运营 · 知识库",
     "coverTagline": "让每一步改进，有据可循。",
     "index": "04",
-    "meta": "个人项目 · 04"
+    "meta": "创作 / 知识库"
   },
   {
     "index": "01",

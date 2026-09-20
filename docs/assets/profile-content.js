@@ -219,7 +219,7 @@ export const focus = [
 export const boot = [
   {
     "kind": "title",
-    "text": "李俊祎 OS v2.0.0 — 清透浅色"
+    "text": "李俊祎 OS v2.0.0 — Clear Light"
   },
   {
     "kind": "ok",
@@ -255,7 +255,7 @@ export const boot = [
   },
   {
     "kind": "login",
-    "text": "登录用户：lijunyi"
+    "text": "login: lijunyi"
   }
 ];
 

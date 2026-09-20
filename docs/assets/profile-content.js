@@ -51,9 +51,20 @@ export const profile = {
 
 export const works = [
   {
-    "index": "01",
     "kind": "product",
-    "meta": "个人项目 · 01",
+    "title": "OvO",
+    "detailUrl": "https://github.com/17lijunyi/OvO",
+    "url": "https://github.com/17lijunyi/OvO",
+    "copy": "免费的原生 macOS 翻译工具，支持划词、截图和输入翻译。内置苹果系统翻译，可接入 DeepSeek 与自定义 API，配备柔焦玻璃浮窗、历史记录与收藏。",
+    "action": "查看 OvO",
+    "cover": "/assets/ovo-cover.png",
+    "index": "01",
+    "meta": "个人项目 · 01"
+  },
+  {
+    "index": "02",
+    "kind": "product",
+    "meta": "个人项目 · 02",
     "title": "Muse10",
     "detailUrl": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
     "copy": "高端美甲与穿戴甲定制品牌，探索 AI 定制与 AI 试戴，将个性化设计与上手预览融入专属美甲体验。",
@@ -62,15 +73,27 @@ export const works = [
     "cover": "/assets/muse10-cover.png"
   },
   {
-    "index": "02",
+    "index": "03",
     "kind": "product",
-    "meta": "个人项目 · 02",
+    "meta": "个人项目 · 03",
     "title": "幻想之境",
     "detailUrl": "https://huanxiangzhijing.store/",
     "copy": "AI 互动叙事平台，融合 20 个原创故事世界与角色陪伴。自由选择开场与续写分支，在互动中塑造属于自己的故事。",
     "url": "https://huanxiangzhijing.store/",
     "action": "打开幻想之境",
     "cover": "/assets/huanxiangzhijing-poster.jpg"
+  },
+  {
+    "kind": "product",
+    "title": "看山知识库",
+    "detailUrl": "https://github.com/17lijunyi/kanshan-kb",
+    "url": "https://github.com/17lijunyi/kanshan-kb",
+    "copy": "面向知乎创作者的开源创作与运营知识库，围绕定位、内容和复盘整理 10 个模块、28 篇方法，结合可追溯的来源卡，为创作诊断与改进提供依据。",
+    "action": "查看知识库",
+    "coverEyebrow": "创作 · 运营 · 知识库",
+    "coverTagline": "让每一步改进，有据可循。",
+    "index": "04",
+    "meta": "个人项目 · 04"
   },
   {
     "index": "01",

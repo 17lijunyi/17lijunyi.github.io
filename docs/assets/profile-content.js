@@ -1,6 +1,6 @@
 import {normalizeArticles} from "./article-utils.js";
 // Profile: https://17lijunyi.github.io/ and its embedded GitHub README.
-// Articles: all 12 published records from 少玩多学AI, verified on 2026-09-12.
+// Articles: all 18 published records from 少玩多学AI, verified on 2026-09-20.
 export const profile = {
   "name": "李俊祎",
   "latin": "李俊祎",
@@ -118,6 +118,54 @@ export const works = [
 ];
 
 const articleEntries = [
+  {
+    "id": "wechat-2247483759-1",
+    "label": "MiMo Code 这 3 个设计，值得写进你的下一份 AI 产品 PRD",
+    "url": "https://mp.weixin.qq.com/s/J7YrMqDSJFvzq1Ere7Lmrw",
+    "date": "2026-09-20",
+    "publishedAt": "2026-09-20T22:35:52+08:00",
+    "cover": "/assets/articles/wechat-2247483759-1.jpg"
+  },
+  {
+    "id": "wechat-2247483753-1",
+    "label": "Gemini 4 Pro 真能打赢 Astra 和 Fable？那张疯传的跑分图可信吗？",
+    "url": "https://mp.weixin.qq.com/s/p6oMmFX8XHEazCdEIyo0dA",
+    "date": "2026-09-18",
+    "publishedAt": "2026-09-18T20:44:59+08:00",
+    "cover": "/assets/articles/wechat-2247483753-1.jpg"
+  },
+  {
+    "id": "wechat-2247483749-1",
+    "label": "Claude Code、Codex 都能干活，DeepSeek Harness 还值得折腾吗？",
+    "url": "https://mp.weixin.qq.com/s/yhQMwUilV4C3qWbaVIosSA",
+    "date": "2026-09-17",
+    "publishedAt": "2026-09-17T18:45:17+08:00",
+    "cover": "/assets/articles/wechat-2247483749-1.jpg"
+  },
+  {
+    "id": "wechat-2247483745-1",
+    "label": "豆包手机又来了，这次能放心把事情交给它吗？",
+    "url": "https://mp.weixin.qq.com/s/oEzwISEJlwJoG7lLD6_M6w",
+    "date": "2026-09-15",
+    "publishedAt": "2026-09-15T23:38:30+08:00",
+    "cover": "/assets/articles/wechat-2247483745-1.jpg"
+  },
+  {
+    "id": "wechat-2247483741-1",
+    "label": "老板在微信里派活，你转手派给 WorkBuddy",
+    "url": "https://mp.weixin.qq.com/s/h2nrYveCTMO8O9_1WfOHYA",
+    "date": "2026-09-15",
+    "publishedAt": "2026-09-15T19:16:52+08:00",
+    "cover": "/assets/articles/wechat-2247483741-1.jpg"
+  },
+  {
+    "id": "wechat-2247483737-1",
+    "label": "每秒上千Token，OpenAI这款模型却要下架了",
+    "url": "https://mp.weixin.qq.com/s/zviKiUifW-IkmaHY7LrQIA",
+    "date": "2026-09-12",
+    "publishedAt": "2026-09-12T22:00:01+08:00",
+    "cover": "/assets/articles/wechat-2247483737-1.jpg"
+  },
   {
     "id": "wechat-2247483719-1",
     "label": "马斯克给Grok Bot配了台电脑，打工人的日常要变了？",

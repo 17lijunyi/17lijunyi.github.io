@@ -48,3 +48,9 @@
 @media (max-width: 900px) {
   .work-showcase { min-height: 650px; }
 }
+
+/* Preserve the complete wide project artwork, including its title. */
+.work-product-card img[src$="/xuanfudao-cover.png"] {
+  object-fit: contain;
+  background: #f8f7f4;
+}

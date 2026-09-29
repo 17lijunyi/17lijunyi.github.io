@@ -55,7 +55,7 @@ export const works = [
     "title": "简励",
     "detailUrl": "https://github.com/17lijunyi/jianli",
     "url": "https://github.com/17lijunyi/jianli",
-    "copy": "我的个人项目：一款面向 Mac 的中文简历应用，支持简历编辑、模板选择、实时预览、PDF 导出和 AI 辅助，搭配玻璃质感窗口与悬浮控件，内容保存在本机。",
+    "copy": "一款面向 Mac 的中文简历应用，支持简历编辑、模板选择、实时预览、PDF 导出和 AI 辅助，搭配玻璃质感窗口与悬浮控件，内容保存在本机。",
     "action": "查看简励",
     "cover": "/assets/jianli-cover.png",
     "index": "01",

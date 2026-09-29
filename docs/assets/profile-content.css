@@ -49,14 +49,11 @@
   .work-showcase { min-height: 650px; }
 }
 
-/* Preserve the complete wide project artwork, including its title. */
-.work-product-card img[src$="/xuanfudao-cover.png"] {
-  object-fit: contain;
-  background: #f8f7f4;
-}
-
-/* Show the full JL icon without cropping its letterform. */
-.work-product-card img[src$="/jianli-cover.png"] {
-  object-fit: contain;
-  background: #f3f3f3;
+/* Fill every project and article cover without letterboxing. */
+.work-product-card > img,
+.work-product-card > .work-product-cover-link > img,
+.note-showcase-card > img,
+.note-cover {
+  object-fit: cover;
+  object-position: center;
 }

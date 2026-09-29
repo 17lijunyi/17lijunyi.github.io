@@ -54,3 +54,9 @@
   object-fit: contain;
   background: #f8f7f4;
 }
+
+/* Show the full JL icon without cropping its letterform. */
+.work-product-card img[src$="/jianli-cover.png"] {
+  object-fit: contain;
+  background: #f3f3f3;
+}

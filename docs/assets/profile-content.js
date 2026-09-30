@@ -52,14 +52,25 @@ export const profile = {
 export const works = [
   {
     "kind": "product",
+    "title": "Orbi",
+    "detailUrl": "https://github.com/17lijunyi/orbi",
+    "url": "https://github.com/17lijunyi/orbi",
+    "copy": "我设计并持续迭代的中文 Mac AI 工作台，以悬浮玻璃界面组织智能体、聊天与模型服务。基于 Lorca 开源项目开发，重点打磨桌面交互、中文体验与智能体协作。",
+    "action": "查看 Orbi 源码",
+    "cover": "/assets/orbi-cover.png",
+    "index": "01",
+    "meta": "个人项目 · 01"
+  },
+  {
+    "kind": "product",
     "title": "简励",
     "detailUrl": "https://github.com/17lijunyi/jianli",
     "url": "https://github.com/17lijunyi/jianli",
     "copy": "一款面向 Mac 的中文简历应用，支持简历编辑、模板选择、实时预览、PDF 导出和 AI 辅助，搭配玻璃质感窗口与悬浮控件，内容保存在本机。",
     "action": "查看简励",
     "cover": "/assets/jianli-cover.png",
-    "index": "01",
-    "meta": "个人项目 · 01"
+    "index": "02",
+    "meta": "个人项目 · 02"
   },
   {
     "kind": "product",
@@ -69,8 +80,8 @@ export const works = [
     "copy": "把工作台藏进 Mac 顶部。整合 AI 任务、待办、笔记、项目抽屉与专注计时，采用柔焦玻璃界面，本地优先。",
     "action": "查看开源项目",
     "cover": "/assets/xuanfudao-cover.png",
-    "index": "02",
-    "meta": "个人项目 · 02"
+    "index": "03",
+    "meta": "个人项目 · 03"
   },
   {
     "kind": "product",
@@ -80,13 +91,13 @@ export const works = [
     "copy": "免费的原生 macOS 翻译工具，支持划词、截图和输入翻译。内置苹果系统翻译，可接入 DeepSeek 与自定义 API，配备柔焦玻璃浮窗、历史记录与收藏。",
     "action": "查看 OvO",
     "cover": "/assets/ovo-cover.png",
-    "index": "03",
-    "meta": "个人项目 · 03"
+    "index": "04",
+    "meta": "个人项目 · 04"
   },
   {
-    "index": "04",
+    "index": "05",
     "kind": "product",
-    "meta": "个人项目 · 04",
+    "meta": "个人项目 · 05",
     "title": "Muse10",
     "detailUrl": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
     "copy": "高端美甲与穿戴甲定制品牌，探索 AI 定制与 AI 试戴，将个性化设计与上手预览融入专属美甲体验。",
@@ -95,9 +106,9 @@ export const works = [
     "cover": "/assets/muse10-cover.png"
   },
   {
-    "index": "05",
+    "index": "06",
     "kind": "product",
-    "meta": "个人项目 · 05",
+    "meta": "个人项目 · 06",
     "title": "幻想之境",
     "detailUrl": "https://huanxiangzhijing.store/",
     "copy": "AI 互动叙事平台，融合 20 个原创故事世界与角色陪伴。自由选择开场与续写分支，在互动中塑造属于自己的故事。",

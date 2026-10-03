@@ -55,7 +55,7 @@ export const works = [
     "title": "Orbi",
     "detailUrl": "https://github.com/17lijunyi/orbi",
     "url": "https://github.com/17lijunyi/orbi",
-    "copy": "我设计并持续迭代的中文 Mac AI 工作台，以悬浮玻璃界面组织智能体、聊天与模型服务。基于 Lorca 开源项目开发，重点打磨桌面交互、中文体验与智能体协作。",
+    "copy": "我基于 Lorca 持续开发的原生 macOS AI 工作台，将智能体、聊天与模型服务放进统一的桌面空间。七款窗口主题搭配毛绒星球形象，支持预设选择、DIY 调色、表情配饰和随机组合，让 AI 团队更贴近日常工作。",
     "action": "查看 Orbi 源码",
     "cover": "/assets/orbi-cover.png",
     "index": "01",

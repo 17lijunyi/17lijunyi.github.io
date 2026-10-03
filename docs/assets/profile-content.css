@@ -57,3 +57,67 @@
   object-fit: cover;
   object-position: center;
 }
+
+/* Keep the desktop frame usable on short screens and narrow laptops. */
+@media (min-width: 901px) {
+  .site-shell { grid-template-rows: 44px minmax(610px, 1fr) 60px; }
+  .about-view { grid-template-columns: minmax(290px, .85fr) minmax(0, 1.25fr); }
+  .identity-panel { padding: 40px 28px; }
+  .decision-system { padding: 32px 22px; }
+  .decision-lane { grid-template-columns: minmax(100px,1fr) 16px 100px 16px minmax(100px,1fr); }
+  .decision-core { width: 100px; height: 140px; }
+  .decision-core strong { font-size: 12px; }
+  .map-node { padding: 10px; gap: 8px; }
+  .node-icon { width: 30px; height: 30px; }
+}
+.work-carousel-slot { width: clamp(300px, 34vw, 400px); height: calc(100% - 84px); max-height: 580px; top: 48%; }
+.work-showcase-card { min-height: 0; }
+.work-product-card > img,
+.work-product-card > .work-product-cover-link { flex: 0 0 42%; height: 42%; padding: 0; overflow: hidden; }
+.work-product-card > .work-product-cover-link > img { width: 100%; height: 100%; object-fit: cover; }
+.work-product-card .work-card-copy,
+.work-tool-card .work-card-copy,
+.note-showcase-card .work-card-copy { padding: 20px 24px; gap: 12px; overflow-y: auto; }
+.work-card-copy .sentence-line { display: inline; }
+.work-card-copy h2 { flex-shrink: 0; }
+.work-product-card .work-card-copy > p { font-size: 13px; line-height: 1.7; margin-top: 0; }
+.work-card-copy > a { flex-shrink: 0; padding-top: 8px; }
+.note-showcase-card > img { flex: 0 0 52%; height: 52%; object-fit: contain; background: #f4f7f9; }
+.note-showcase-card .work-card-copy h2 { margin-top: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; }
+.work-product-cover-link[href*="/zaowutai"] { background: #faf7f0; }
+.work-product-cover-link[href*="/zaowutai"] > img { object-fit: contain; }
+@media (min-width: 901px) and (max-width: 1150px) {
+  .os-layout { grid-template-columns: 108px minmax(0, 1fr); gap: 12px; }
+  .os-sidebar button { grid-template-columns: 34px 1fr; gap: 6px; padding-left: 10px; }
+  .nav-icon { width: 34px; height: 40px; }
+  .about-view { grid-template-columns: minmax(250px,.9fr) minmax(0,1fr); }
+  .decision-system { padding-inline: 14px; }
+  .decision-lane { grid-template-columns: minmax(70px,1fr) 10px 80px 10px minmax(70px,1fr); }
+  .decision-core { width: 80px; }
+  .decision-core small, .node-icon { display: none; }
+  .map-node strong { white-space: normal; }
+}
+@media (max-width: 900px) {
+  .work-showcase { height: 640px; min-height: 0; }
+  .work-carousel-slot { width: min(76vw,400px); height: 550px; max-height: calc(100% - 76px); }
+  .portrait-rig { right: 36px; }
+  .contact-view { gap: 28px; }
+}
+@media (max-width: 620px) {
+  .os-sidebar { overflow: visible; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 0; }
+  .os-sidebar button { min-width: 0; font-size: 10px; padding: 4px 0; }
+  .work-showcase { height: 610px; }
+  .work-carousel-slot { width: calc(100vw - 76px); max-width: 380px; height: 530px; }
+  .work-product-card .work-card-copy, .work-tool-card .work-card-copy, .note-showcase-card .work-card-copy { padding: 18px; gap: 10px; }
+  .work-carousel-nav { width: 32px; height: 32px; font-size: 24px; }
+  .work-carousel-prev { left: 4px; } .work-carousel-next { right: 4px; }
+  .work-card-copy h2 { font-size: 24px; }
+  .note-showcase-card .work-card-copy h2 { font-size: 18px; }
+  .identity-panel { min-height: 0; padding-bottom: 32px; }
+  .hero-statement { font-size: 22px; }
+  .decision-lane { grid-template-columns: minmax(0,1fr) 12px 60px 12px minmax(0,1fr); }
+  .decision-core { width: 76px; }
+  .map-node strong { white-space: normal; }
+  .system-status { letter-spacing: 0; gap: 6px; }
+  .terminal-strip { gap: 10px; padding-inline: 10px; }
+}

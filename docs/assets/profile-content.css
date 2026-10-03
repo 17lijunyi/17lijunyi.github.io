@@ -121,3 +121,10 @@
   .system-status { letter-spacing: 0; gap: 6px; }
   .terminal-strip { gap: 10px; padding-inline: 10px; }
 }
+
+/* App icons keep their full silhouette rather than cropping to a banner. */
+.work-product-cover-link[href="https://github.com/17lijunyi/jianli"] { background: #f7f7f7; }
+.work-product-cover-link[href="https://github.com/17lijunyi/jianli"] > img { object-fit: contain; padding: 12px; }
+
+.work-product-cover-link[href="https://github.com/17lijunyi/orbi"] { background: #faf7fa; }
+.work-product-cover-link[href="https://github.com/17lijunyi/orbi"] > img { object-fit: contain; padding: 14px; }

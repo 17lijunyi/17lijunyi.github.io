@@ -8,7 +8,7 @@ export const profile = {
   "host": "ljy-mac",
   "os": "李俊祎 OS",
   "role": "AI 产品经理",
-  "avatar": "https://avatars.githubusercontent.com/u/265234589?v=4",
+  "avatar": "/assets/lijunyi-avatar.jpg?v=resume-avatar-20261004",
   "tagline": "把 AI 做成真正有人用的产品",
   "summary": "桌面办公 Agent · 产品设计与评测",
   "bio": "我关注 Agent 如何完成真实的办公任务。参与过本地资料汇总 Agent 的产品建设，负责使用场景、任务流程、授权反馈和结果验收。通过固定任务评测与内部试用，推动产品持续迭代。",

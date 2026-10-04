@@ -11,6 +11,7 @@
 .identity-panel .hero-actions { margin-top: 16px; padding-top: 16px; }
 .identity-panel .hero-actions { flex-wrap: wrap; row-gap: 12px; }
 .identity-panel .text-action { white-space: pre-wrap; text-align: left; }
+.portrait-card img { object-fit: contain; object-position: center; filter: none; }
 .work-tool-card h2 { overflow-wrap: anywhere; }
 .contact-channels button {
   width: 100%;

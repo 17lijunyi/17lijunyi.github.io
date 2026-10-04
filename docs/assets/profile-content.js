@@ -9,14 +9,14 @@ export const profile = {
   "os": "李俊祎 OS",
   "role": "AI 产品经理",
   "tagline": "把 AI 做成真正有人用的产品",
-  "summary": "AI 训练师 → AI 产品经理",
-  "bio": "做过数据、SFT 和模型评测，也在学习原型、智能体和 AI 产品设计。",
-  "byline": "公众号「少玩多学AI」作者",
+  "summary": "桌面办公 Agent · 产品设计与评测",
+  "bio": "我关注 Agent 如何完成真实的办公任务。参与过本地资料汇总 Agent 的产品建设，负责使用场景、任务流程、授权反馈和结果验收。通过固定任务评测与内部试用，推动产品持续迭代。",
+  "byline": "公众号作者  少玩多学AI",
   "email": "lijunyi2026setoff@gmail.com",
   "github": "https://github.com/17lijunyi",
   "website": "https://17lijunyi.github.io/",
-  "echo": "AI 产品 × 智能体 × 知识库",
-  "contactIntro": "欢迎通过邮箱交流 AI 产品、智能体与知识库，也可以继续查看我的项目与文章。",
+  "echo": "AI 产品 × 桌面办公 Agent × 任务评测",
+  "contactIntro": "欢迎通过邮箱交流 AI 产品、桌面办公 Agent 与任务评测，也可以继续查看我的项目与文章。",
   "contacts": [
     {
       "label": "邮箱",
@@ -312,21 +312,21 @@ export const notes = normalizeArticles(articleEntries);
 
 export const focus = [
   {
-    "input": "AI 产品",
-    "output": "真实需求",
-    "detail": "从真实需求出发，思考什么才是真正好用。",
+    "input": "用户研究",
+    "output": "首版范围",
+    "detail": "从真实办公需求出发，拆解任务、确定首版范围，并明确结果验收要求。",
     "tone": "blue"
   },
   {
-    "input": "智能体",
-    "output": "实际任务",
-    "detail": "关注智能体在实际任务中的作用。",
+    "input": "Agent 设计",
+    "output": "任务执行",
+    "detail": "围绕资料汇总设计任务流程、工具调用与授权反馈，让执行过程和结果可检查。",
     "tone": "green"
   },
   {
-    "input": "知识库",
-    "output": "具体问题",
-    "detail": "让知识服务于具体问题。",
+    "input": "任务评测",
+    "output": "产品迭代",
+    "detail": "用固定任务评测与内部试用跟踪完成情况，分析失败案例，并验证版本改进。",
     "tone": "amber"
   }
 ];
@@ -354,11 +354,11 @@ export const boot = [
   },
   {
     "kind": "ok",
-    "text": "同步方法：构建 → 验证 → 交付 → 学习"
+    "text": "同步方法：需求 → 设计 → 评测 → 迭代"
   },
   {
     "kind": "ok",
-    "text": "载入实践经历：数据 · SFT · 模型评测"
+    "text": "载入产品实践：任务规划 · 交互设计 · 任务评测"
   },
   {
     "kind": "ok",
@@ -396,26 +396,34 @@ export const intro = [
   },
   {
     "kind": "out",
-    "text": "从 AI 训练师到 AI 产品经理"
+    "text": "桌面办公 Agent · Agent 产品设计与评测"
   },
   {
     "kind": "out",
-    "text": "做过数据、SFT 和模型评测，也在学习原型、智能体和 AI 产品设计。"
+    "text": "我关注 Agent 如何完成真实的办公任务。"
   },
   {
     "kind": "out",
-    "text": "公众号「少玩多学AI」作者"
+    "text": "参与过本地资料汇总 Agent 的产品建设，负责使用场景、任务流程、授权反馈和结果验收。"
+  },
+  {
+    "kind": "out",
+    "text": "通过固定任务评测与内部试用，推动产品持续迭代。"
+  },
+  {
+    "kind": "out",
+    "text": "公众号作者  少玩多学AI"
   },
   {
     "kind": "blank"
   },
   {
     "kind": "cmd",
-    "text": "echo \"AI 产品 × 智能体 × 知识库\""
+    "text": "echo \"AI 产品 × 桌面办公 Agent × 任务评测\""
   },
   {
     "kind": "gold",
-    "text": "AI 产品 × 智能体 × 知识库"
+    "text": "AI 产品 × 桌面办公 Agent × 任务评测"
   },
   {
     "kind": "blank"

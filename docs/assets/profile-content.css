@@ -7,7 +7,10 @@
   max-width: 34ch;
 }
 .profile-bio + .handwritten-formula { margin-top: 14px; }
+.identity-panel .proof-line { white-space: normal; }
 .identity-panel .hero-actions { margin-top: 16px; padding-top: 16px; }
+.identity-panel .hero-actions { flex-wrap: wrap; row-gap: 12px; }
+.identity-panel .text-action { white-space: pre-wrap; text-align: left; }
 .work-tool-card h2 { overflow-wrap: anywhere; }
 .contact-channels button {
   width: 100%;

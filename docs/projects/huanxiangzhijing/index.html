@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="李俊祎的个人项目：幻想之境。AI 故事共创与长篇写作平台的项目背景、产品职责、写作流程和验证成果。" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>幻想之境 · 个人项目 | 李俊祎</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #22262d;
+        --muted: #727b87;
+        --blue: #235bdf;
+        --line: #e7ebf0;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--blue); text-underline-offset: 5px; }
+      a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 3px; }
+      .skip-link { position: absolute; left: 16px; top: -80px; padding: 12px; background: #fff; z-index: 3; }
+      .skip-link:focus { top: 12px; }
+      .site-bar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #ffffffed;
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(16px);
+      }
+      .site-bar-inner {
+        max-width: 1120px;
+        min-height: 72px;
+        margin: auto;
+        padding: 12px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .home-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-size: 14px; }
+      .home-link svg { width: 18px; height: 18px; }
+      .experience-link { padding: 10px 14px; border-radius: 6px; background: #f0f5ff; text-decoration: none; font-size: 14px; }
+      .home-link:hover, .experience-link:hover { color: #1749b9; }
+      main { max-width: 1120px; margin: auto; padding: 62px 40px 90px; }
+      .eyebrow { margin: 0 0 18px; color: var(--muted); font-size: 13px; letter-spacing: .08em; }
+      h1 { margin: 0 0 24px; font-size: clamp(28px, 3.4vw, 43px); line-height: 1.45; font-weight: 650; letter-spacing: -.035em; }
+      .section-number { color: var(--blue); }
+      h1 .subtitle { display: block; margin: 8px 0 0 3.1em; color: #505b69; font-size: .53em; font-weight: 400; letter-spacing: 0; }
+      .project-status { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 36px; }
+      .project-status span { padding: 6px 11px; border-radius: 4px; background: #f1f5fb; color: #52627a; font-size: 12px; }
+      .project-status .live { background: #eef6f3; color: #397562; }
+      p, li { font-size: 20px; line-height: 1.95; }
+      p { margin: 0; }
+      strong { font-weight: 650; }
+      .background { margin-bottom: 30px; }
+      .on-page { display: flex; gap: 24px; flex-wrap: wrap; padding: 22px 0; border-block: 1px solid var(--line); }
+      .on-page a { color: #52627a; font-size: 14px; text-decoration: none; padding-block: 4px; }
+      .on-page a:hover { color: var(--blue); }
+      section { margin-top: 52px; }
+      h2 { margin: 0 0 24px; font-size: clamp(23px, 2.4vw, 31px); line-height: 1.5; letter-spacing: -.02em; font-weight: 650; }
+      ol, ul { margin: 0; padding-left: 1.7em; }
+      li { padding-left: 8px; margin-bottom: 22px; }
+      li::marker { color: var(--blue); font-weight: 500; }
+      li:last-child { margin-bottom: 0; }
+      .delivery-note { margin-top: 36px; padding: 20px 24px; border-left: 3px solid #abc2ee; background: #f7f9fd; color: #586477; font-size: 15px; line-height: 1.9; }
+      footer { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; margin-top: 58px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.8; }
+      footer a { text-decoration: none; }
+      @media (max-width: 640px) {
+        .site-bar-inner { min-height: 64px; padding: 10px 20px; }
+        .home-link, .experience-link { font-size: 12px; }
+        main { padding: 36px 22px 56px; }
+        h1 .subtitle { margin-left: 0; font-size: 18px; }
+        p, li { font-size: 16px; line-height: 1.9; }
+        h2 { font-size: 22px; }
+        section { margin-top: 36px; }
+        li { padding-left: 3px; margin-bottom: 20px; }
+        .on-page { gap: 20px; }
+        .delivery-note { padding: 16px 18px; font-size: 14px; }
+      }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#project-background">跳到项目内容</a>
+    <header class="site-bar">
+      <div class="site-bar-inner">
+        <a class="home-link" href="../../">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" /></svg>
+          返回个人主页
+        </a>
+        <a class="experience-link" href="https://huanxiangzhijing.store/" target="_blank" rel="noopener noreferrer">体验短篇网站 ↗</a>
+      </div>
+    </header>
+    <main>
+      <article aria-labelledby="project-title">
+        <header>
+          <p class="eyebrow">李俊祎 / 个人项目</p>
+          <h1 id="project-title"><span class="section-number">3.2</span> 幻想之境<span class="subtitle">AI 故事共创与长篇写作平台</span></h1>
+          <div class="project-status" aria-label="实现状态">
+            <span class="live">短篇已上线</span>
+            <span>长篇完成本地验证</span>
+            <span>独立产品设计 · AI 协作研发</span>
+          </div>
+          <p class="background" id="project-background"><strong>项目背景：</strong>从个人小说创作与短剧灵感需求出发，针对 AI 写作中输入门槛高、续写同质化、前后设定冲突及人物关系难以持续发展的问题，设计以“选择故事世界、与虚拟人物同行、选择后续发展”为核心的网页产品。围绕新手短篇体验、专业创作者长篇共创与快速长篇初稿三类场景，探索从灵感选择、互动写作到章节审查与作品保存的完整流程。独立负责产品定位、需求梳理、交互设计与技术方案，借助 AI 编程工具推进开发和验证。</p>
+          <nav class="on-page" aria-label="项目介绍目录">
+            <a href="#project-background">项目背景</a>
+            <a href="#responsibilities">项目职责</a>
+            <a href="#results">项目成果</a>
+          </nav>
+        </header>
+        <section id="responsibilities" aria-labelledby="responsibilities-title">
+          <h2 id="responsibilities-title"><span class="section-number">3.2.1</span> 项目职责</h2>
+          <ol>
+            <li><strong>需求洞察与竞品研究：</strong>围绕个人创作中的灵感获取、低输入成本与剧情参与感梳理需求，参考彩云小梦及开源 AI 写作项目，明确每轮提供三段实际故事文字、由用户选择后继续发展的核心机制。结合迭代体验，将产品从小说、热点二创和广告生成收束到故事创作，优先验证人物陪伴与叙事连续性。</li>
+            <li><strong>用户分层与创作路径设计：</strong>区分创作新手、专业作者与快速初稿用户的控制需求，设计短篇同行、长篇共创和自动初稿三条路径。短篇降低设定与输入门槛；专业模式支持大纲修改、逐章审查和人工采纳；自动模式先确认大纲并试读开篇，再分批推进。两个长篇入口共用作品、章节与修订数据，支持创作方式切换。</li>
+            <li><strong>故事内容与虚拟人物设计：</strong>梳理日本动漫、欧美影视及中国电视剧的叙事母题，将世界规则、核心矛盾和人物关系转化为原创故事设定。建立二十个故事世界、六十篇精选开局及对应场景配图，为各世界配置具有性格、目标和行为边界的虚拟同行者，提供患难搭档、旧日挚友和亦敌亦友等初始关系。</li>
+            <li><strong>提示词设计与上下文管理：</strong>将世界规则、人物动机、同行者关系、叙述视角及已选正文组织为生成约束，支持第一人称、第三人称与选填创作要求。明确候选文字只有被用户选中后才成为故事经历，设计带正文引用的同行者记忆，以及撤回最新一段时同步恢复正文、候选与人物状态的规则。</li>
+            <li><strong>写作 Workflow 与质量约束：</strong>接入 LangGraph 编排生成、结构校验与独立语义审查，参考 Novel-Agent 和自动小说项目，将修订审批、上下文组织、逐章生成和有限返修机制适配到现有网站。区分客观事实、人物信念与人物说法，使用原文片段编号核对审查证据；修改前章或大纲后标记后续内容需要复核，避免沿用失效审查结果。</li>
+            <li><strong>成本控制、权限与异常处理：</strong>设计访客故事按身份隔离、管理员配置独立保护、调用前费用预留及书级预算上限。梳理生成失败、篇幅异常、任务中断、暂停与重试场景，明确保留可编辑草稿、复用已保存响应、未知结果不自动重试及单步骤有限重试等规则；通过持久化任务状态和租约校验控制重复调用与并发覆盖。</li>
+            <li><strong>AI 协作研发与验证交付：</strong>运用 AGENTS.md、产品约定和项目上下文文档，将需求、实现边界及验收标准转化为 AI 编程任务。推进 React／TypeScript 前端、Node.js 服务端与 Cloudflare D1 数据存储实现，完成腾讯云 EdgeOne 网站部署；分别核对模拟接口测试、真实 DeepSeek 调用和线上访问结果，沉淀部署、迁移、许可证及交接说明，并将源码同步至 GitHub 私有仓库。</li>
+          </ol>
+        </section>
+        <section id="results" aria-labelledby="results-title">
+          <h2 id="results-title"><span class="section-number">3.2.2</span> 项目成果</h2>
+          <ul>
+            <li><strong>短篇产品上线与内容体系：</strong>完成并上线深色宇宙风格的互动故事网页，首版包含二十个原创世界、六十篇精选开局、二十张场景配图及对应虚拟同行者，支持三候选续写、关系设定、作品保存、文本导出和最新一段撤回，形成可实际体验的创作闭环。</li>
+            <li><strong>长篇工作台与流程扩展：</strong>本地完成专业长篇共创和自动初稿工作台，支持每本 3–60 章、大纲编辑、章节修订、独立审查、人工采纳、批量生成及预算控制。建立共享作品数据与持久化任务机制，提供独立 Node Worker；长篇新版及常驻云 Worker 尚未发布到正式网站。</li>
+            <li><strong>功能验收与真实模型验证：</strong>53 项功能与接口测试、TypeScript 检查及构建通过，覆盖身份隔离、版本校验、证据引用、预算预留、暂停恢复和有限重试。完成真实 DeepSeek 三章流程验证：开篇经人工修改后采纳，第二、三章自动生成、审查并采纳，二十条事实引文均可在对应正文中核对。验证了运行链路与恢复机制，文学质量及长篇阅读体验仍需进一步评测。</li>
+          </ul>
+          <p class="delivery-note"><strong>当前实现状态：</strong>短篇功能已在正式域名提供使用；长篇共创和自动初稿已完成本地实现与验证，尚未更新到正式网站。上述测试结果用于说明功能验证，不代表文学质量或用户增长成果。</p>
+        </section>
+      </article>
+      <footer>
+        <span>项目记录更新于 <time datetime="2026-10-06">2026.10.06</time></span>
+        <a href="../../">李俊祎 · 个人主页 ↗</a>
+      </footer>
+    </main>
+  </body>
+</html>

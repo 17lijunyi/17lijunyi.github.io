@@ -134,10 +134,11 @@ export const works = [
     "kind": "product",
     "meta": "个人项目 · 08",
     "title": "幻想之境",
-    "detailUrl": "https://huanxiangzhijing.store/",
-    "copy": "AI 互动叙事平台，融合 20 个原创故事世界与角色陪伴。自由选择开场与续写分支，在互动中塑造属于自己的故事。",
-    "url": "https://huanxiangzhijing.store/",
-    "action": "打开幻想之境",
+    "detailUrl": "/projects/huanxiangzhijing/",
+    "copy": "独立发起的 AI 故事共创项目，从个人小说与短剧灵感需求出发，设计三段候选、虚拟同行者与故事记忆，并扩展长篇共创和自动初稿流程。负责产品定位、交互设计、写作约束及 AI 协作研发。",
+    "status": "短篇已上线 · 长篇完成本地验证",
+    "url": "/projects/huanxiangzhijing/",
+    "action": "查看项目介绍",
     "cover": "/assets/huanxiangzhijing-poster.jpg"
   },
   {

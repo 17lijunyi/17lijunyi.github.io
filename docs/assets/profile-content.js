@@ -53,14 +53,26 @@ export const profile = {
 export const works = [
   {
     "kind": "product",
+    "title": "Foundry",
+    "detailUrl": "https://github.com/17lijunyi/Foundry",
+    "url": "https://github.com/17lijunyi/Foundry",
+    "copy": "面向产品经理的 AI 桌面工作台，把需求梳理、文档协作、项目资料与模型对比放进统一的工作空间。采用原生玻璃界面，支持本地文件协作与 2～4 个模型的并行对比；基于 Product Manager Workbench、AionUi 与 AionCore 定制开发。",
+    "action": "查看 Foundry 源码",
+    "coverEyebrow": "需求 · 文档 · 模型对比",
+    "coverTagline": "把想法、资料和 AI 协作，放进一个轻盈的产品工作台。",
+    "index": "01",
+    "meta": "个人项目 · 01"
+  },
+  {
+    "kind": "product",
     "title": "Orbi",
     "detailUrl": "https://github.com/17lijunyi/orbi",
     "url": "https://github.com/17lijunyi/orbi",
     "copy": "我持续开发和维护的 macOS AI 工作台，将智能体、聊天与模型服务放进统一的桌面空间。独立胶囊提供待办、悬浮聊天、创建群聊与创建智能体入口；七款窗口背景搭配可 DIY 的毛绒星球形象，支持颜色、表情、配饰和随机组合。",
     "action": "查看 Orbi 源码",
     "cover": "/assets/orbi-plush-cover.png",
-    "index": "01",
-    "meta": "个人项目 · 01"
+    "index": "02",
+    "meta": "个人项目 · 02"
   },
   {
     "kind": "product",
@@ -70,8 +82,8 @@ export const works = [
     "copy": "一款面向 Mac 的中文简历应用，支持简历编辑、模板选择、实时预览、PDF 导出和 AI 辅助，搭配玻璃质感窗口与悬浮控件，内容保存在本机。",
     "action": "查看简励",
     "cover": "/assets/jianli-cover.png",
-    "index": "02",
-    "meta": "个人项目 · 02"
+    "index": "03",
+    "meta": "个人项目 · 03"
   },
   {
     "kind": "product",
@@ -81,8 +93,8 @@ export const works = [
     "copy": "中文 AI 桌面工作台，将对话、项目文件、助手与模型对比放在一起。采用纸艺界面，支持接入 Codex CLI、Claude Code 和 Pi 等助手；基于产品经理工作台、AionUi 与 AionCore 二次开发。",
     "action": "查看造物台",
     "cover": "/assets/zaowutai-cover.png",
-    "index": "03",
-    "meta": "个人项目 · 03"
+    "index": "04",
+    "meta": "个人项目 · 04"
   },
   {
     "kind": "product",
@@ -92,8 +104,8 @@ export const works = [
     "copy": "把工作台藏进 Mac 顶部。整合 AI 任务、待办、笔记、项目抽屉与专注计时，采用柔焦玻璃界面，本地优先。",
     "action": "查看开源项目",
     "cover": "/assets/xuanfudao-cover.png",
-    "index": "04",
-    "meta": "个人项目 · 04"
+    "index": "05",
+    "meta": "个人项目 · 05"
   },
   {
     "kind": "product",
@@ -103,13 +115,13 @@ export const works = [
     "copy": "免费的原生 macOS 翻译工具，支持划词、截图和输入翻译。内置苹果系统翻译，可接入 DeepSeek 与自定义 API，配备柔焦玻璃浮窗、历史记录与收藏。",
     "action": "查看 OvO",
     "cover": "/assets/ovo-cover.png",
-    "index": "05",
-    "meta": "个人项目 · 05"
+    "index": "06",
+    "meta": "个人项目 · 06"
   },
   {
-    "index": "06",
+    "index": "07",
     "kind": "product",
-    "meta": "个人项目 · 06",
+    "meta": "个人项目 · 07",
     "title": "Muse10",
     "detailUrl": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
     "copy": "高端美甲与穿戴甲定制品牌，探索 AI 定制与 AI 试戴，将个性化设计与上手预览融入专属美甲体验。",
@@ -118,15 +130,25 @@ export const works = [
     "cover": "/assets/muse10-cover.png"
   },
   {
-    "index": "07",
+    "index": "08",
     "kind": "product",
-    "meta": "个人项目 · 07",
+    "meta": "个人项目 · 08",
     "title": "幻想之境",
     "detailUrl": "https://huanxiangzhijing.store/",
     "copy": "AI 互动叙事平台，融合 20 个原创故事世界与角色陪伴。自由选择开场与续写分支，在互动中塑造属于自己的故事。",
     "url": "https://huanxiangzhijing.store/",
     "action": "打开幻想之境",
     "cover": "/assets/huanxiangzhijing-poster.jpg"
+  },
+  {
+    "kind": "tool",
+    "sourcePath": "skills/ai-product-resume-edit",
+    "meta": "智能体 / 技能",
+    "title": "AI 产品简历修改",
+    "copy": "面向 AI 产品经理、FDE 与转型求职者，在已有简历上修改表达、数据与排版",
+    "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/ai-product-resume-edit",
+    "action": "查看开源技能",
+    "index": "01"
   },
   {
     "kind": "tool",
@@ -141,7 +163,7 @@ export const works = [
     "meta": "创作 / 知识库"
   },
   {
-    "index": "01",
+    "index": "02",
     "kind": "tool",
     "sourcePath": "skills/muse10-nail-visuals",
     "meta": "智能体 / 技能",
@@ -151,7 +173,7 @@ export const works = [
     "action": "查看开源技能"
   },
   {
-    "index": "02",
+    "index": "03",
     "kind": "tool",
     "sourcePath": "skills/product-evidence-deconstruction",
     "meta": "智能体 / 技能",

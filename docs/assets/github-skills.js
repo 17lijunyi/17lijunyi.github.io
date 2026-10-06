@@ -1,9 +1,15 @@
 // Public metadata only: no credentials, skill execution, or generated HTML.
 const repository = "17lijunyi/17lijunyi";
 const cacheKey = "lijunyi:github-skills:v1";
-const cacheVersion = "2026-09-12-muse10";
+const cacheVersion = "2026-10-06-resume-priority";
 const cacheLifetime = 5 * 60 * 1000;
 const skillPath = /^skills\/[a-zA-Z0-9][a-zA-Z0-9._-]{0,99}$/;
+const featuredSkills = ["skills/ai-product-resume-edit"];
+
+function priority(sourcePath) {
+  const index = featuredSkills.indexOf(sourcePath);
+  return index < 0 ? featuredSkills.length : index;
+}
 
 function localStorageOrNull() {
   try { return globalThis.localStorage ?? null; } catch { return null; }
@@ -56,7 +62,10 @@ function catalogue(items) {
     const entry = card(item);
     if (entry && !unique.has(entry.sourcePath)) unique.set(entry.sourcePath, entry);
   }
-  return [...unique.values()].map((entry, index) => ({...entry, index: String(index + 1).padStart(2, "0")}));
+  // Apply the same priority to bundled, cached, and freshly synced entries.
+  return [...unique.values()]
+    .sort((a, b) => priority(a.sourcePath) - priority(b.sourcePath))
+    .map((entry, index) => ({...entry, index: String(index + 1).padStart(2, "0")}));
 }
 
 export function createSkillStore(fallback, {

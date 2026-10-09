@@ -132,3 +132,7 @@
 
 .work-product-cover-link[href="https://github.com/17lijunyi/orbi"] { background: #faf7fa; }
 .work-product-cover-link[href="https://github.com/17lijunyi/orbi"] > img { object-fit: contain; padding: 14px; }
+
+/* Preserve the complete Foundry app icon. */
+.work-product-cover-link[href="https://github.com/17lijunyi/Foundry"] { background: #f0f5f9; }
+.work-product-cover-link[href="https://github.com/17lijunyi/Foundry"] > img { object-fit: contain; padding: 14px; }

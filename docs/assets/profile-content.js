@@ -61,7 +61,8 @@ export const works = [
     "coverEyebrow": "需求 · 文档 · 模型对比",
     "coverTagline": "把想法、资料和 AI 协作，放进一个轻盈的产品工作台。",
     "index": "01",
-    "meta": "个人项目 · 01"
+    "meta": "个人项目 · 01",
+    "cover": "/assets/foundry-cover.png"
   },
   {
     "kind": "product",

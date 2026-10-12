@@ -136,3 +136,7 @@
 /* Preserve the complete Foundry app icon. */
 .work-product-cover-link[href="https://github.com/17lijunyi/Foundry"] { background: #f0f5f9; }
 .work-product-cover-link[href="https://github.com/17lijunyi/Foundry"] > img { object-fit: contain; padding: 14px; }
+
+/* Preserve the full FrameFlow clapperboard icon in the project card. */
+.work-product-cover-link[href="/projects/frameflow/"] { background: #f3f4f5; }
+.work-product-cover-link[href="/projects/frameflow/"] > img { object-fit: contain; padding: 14px; }

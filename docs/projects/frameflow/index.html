@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FrameFlow：面向短片与故事创作的中文桌面工作室。李俊祎的创作思路、交互设计与开发过程，以及创作对话、分镜、逐镜生成和 Agent 视频剪辑。" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>FrameFlow · 个人项目 | 李俊祎</title>
+    <link rel="icon" type="image/png" href="../../assets/frameflow-cover.png" />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #22262d;
+        --muted: #727b87;
+        --blue: #235bdf;
+        --line: #e7ebf0;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--blue); text-underline-offset: 5px; }
+      a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 3px; }
+      .skip-link { position: absolute; left: 16px; top: -80px; padding: 12px; background: #fff; z-index: 3; }
+      .skip-link:focus { top: 12px; }
+      .site-bar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #ffffffed;
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(16px);
+      }
+      .site-bar-inner {
+        max-width: 1120px;
+        min-height: 72px;
+        margin: auto;
+        padding: 12px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .home-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-size: 14px; }
+      .home-link svg { width: 18px; height: 18px; }
+      .source-link { padding: 10px 14px; border-radius: 6px; background: #f0f5ff; text-decoration: none; font-size: 14px; white-space: nowrap; }
+      .home-link:hover, .source-link:hover { color: #1749b9; }
+      main { max-width: 1120px; margin: auto; padding: 62px 40px 90px; }
+      .eyebrow { margin: 0 0 18px; color: var(--muted); font-size: 13px; letter-spacing: .08em; }
+      .project-heading { display: flex; align-items: center; gap: 26px; margin-bottom: 24px; }
+      .project-icon { width: 116px; height: 116px; object-fit: contain; border-radius: 22px; background: #f3f4f5; flex-shrink: 0; }
+      h1 { margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.25; font-weight: 650; letter-spacing: -.035em; }
+      .tagline { margin-top: 10px; color: #505b69; font-size: clamp(17px, 2vw, 22px); line-height: 1.6; }
+      .project-status { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 28px; }
+      .project-status span { padding: 6px 11px; border-radius: 4px; background: #f1f5fb; color: #52627a; font-size: 12px; }
+      .project-status .open { background: #eef6f3; color: #397562; }
+      p, li { font-size: 19px; line-height: 1.95; }
+      p { margin: 0; }
+      strong { font-weight: 650; }
+      .project-intro { margin-bottom: 24px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0 32px; }
+      .actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; font-size: 14px; }
+      .actions .primary { background: var(--blue); color: #fff; border-color: var(--blue); }
+      .actions a:hover { filter: brightness(.94); }
+      .on-page { display: flex; gap: 24px; flex-wrap: wrap; padding: 22px 0; border-block: 1px solid var(--line); }
+      .on-page a { color: #52627a; font-size: 14px; text-decoration: none; padding-block: 4px; }
+      .on-page a:hover { color: var(--blue); }
+      section { margin-top: 52px; }
+      h2 { margin: 0 0 24px; font-size: clamp(23px, 2.4vw, 31px); line-height: 1.5; letter-spacing: -.02em; font-weight: 650; }
+      ol { margin: 0; padding-left: 1.7em; }
+      li { padding-left: 8px; margin-bottom: 22px; }
+      li::marker { color: var(--blue); font-weight: 500; }
+      li:last-child { margin-bottom: 0; }
+      .flow { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+      .flow span { padding: 9px 14px; border-radius: 6px; background: #f4f7fb; color: #52627a; font-size: 14px; }
+      .flow i { font-style: normal; color: #8492a4; }
+      .delivery-note { margin-top: 24px; padding: 20px 24px; border-left: 3px solid #abc2ee; background: #f7f9fd; color: #586477; font-size: 15px; line-height: 1.9; }
+      footer { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; margin-top: 58px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.8; }
+      footer a { text-decoration: none; }
+      @media (max-width: 640px) {
+        .site-bar-inner { min-height: 64px; padding: 10px 20px; }
+        .home-link, .source-link { font-size: 12px; }
+        main { padding: 36px 22px 56px; }
+        .project-heading { gap: 16px; align-items: flex-start; }
+        .project-icon { width: 78px; height: 78px; border-radius: 16px; }
+        h1 { font-size: 30px; }
+        .tagline { font-size: 16px; margin-top: 8px; }
+        p, li { font-size: 16px; line-height: 1.9; }
+        h2 { font-size: 22px; }
+        section { margin-top: 36px; }
+        li { padding-left: 3px; margin-bottom: 20px; }
+        .on-page { gap: 20px; }
+        .delivery-note { padding: 16px 18px; font-size: 14px; }
+        .flow { gap: 7px; }
+        .flow span { padding: 8px 10px; font-size: 12px; }
+      }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#project-intro">跳到项目内容</a>
+    <header class="site-bar">
+      <div class="site-bar-inner">
+        <a class="home-link" href="../../">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" /></svg>
+          返回个人主页
+        </a>
+        <a class="source-link" href="https://github.com/17lijunyi/FrameFlow" target="_blank" rel="noopener noreferrer">获取源码 ↗</a>
+      </div>
+    </header>
+    <main>
+      <article aria-labelledby="project-title">
+        <header>
+          <p class="eyebrow">李俊祎 / 个人项目</p>
+          <div class="project-heading">
+            <img class="project-icon" src="../../assets/frameflow-cover.png" alt="眨眼场记板，FrameFlow 项目图标" width="116" height="116" />
+            <div>
+              <h1 id="project-title">FrameFlow</h1>
+              <p class="tagline">从想法到成片，让创作保留控制。</p>
+            </div>
+          </div>
+          <div class="project-status" aria-label="实现状态">
+            <span class="open">开源测试版</span>
+            <span>macOS 桌面应用</span>
+            <span>源码构建</span>
+          </div>
+          <p class="project-intro" id="project-intro">FrameFlow 是一个面向短片与故事创作的中文桌面工作室，将创作对话、剧本与分镜、逐镜生成和已有视频剪辑放在同一条流程里。可以从一句想法开始，也可以带着剧本、小说或视频素材进入，在每个环节检查、修改，再推进到成片。</p>
+          <div class="actions">
+            <a class="primary" href="https://github.com/17lijunyi/FrameFlow" target="_blank" rel="noopener noreferrer">获取源码 ↗</a>
+            <a href="https://github.com/17lijunyi/FrameFlow#快速开始" target="_blank" rel="noopener noreferrer">查看安装说明 ↗</a>
+          </div>
+          <nav class="on-page" aria-label="项目介绍目录">
+            <a href="#design">创作与设计</a>
+            <a href="#highlights">功能亮点</a>
+            <a href="#status">当前状态</a>
+          </nav>
+        </header>
+        <section id="design" aria-labelledby="design-title">
+          <h2 id="design-title">创作与设计</h2>
+          <p>我希望创作过程既能通过对话快速展开，也能在具体镜头上保留控制。围绕这个目标，我先梳理从想法到分镜的路径，再把镜头编辑、素材管理与任务反馈整理进导演台；随后接入本地 Agent、补上已有视频的剪辑流程，并将常用操作收进两条胶囊栏，让对话和制作衔接得更自然。</p>
+          <div class="flow" aria-label="创作流程：想法、剧本、分镜、逐镜制作、剪辑与导出">
+            <span>想法</span><i aria-hidden="true">→</i>
+            <span>剧本</span><i aria-hidden="true">→</i>
+            <span>分镜</span><i aria-hidden="true">→</i>
+            <span>逐镜制作</span><i aria-hidden="true">→</i>
+            <span>剪辑与导出</span>
+          </div>
+        </section>
+        <section id="highlights" aria-labelledby="highlights-title">
+          <h2 id="highlights-title">功能亮点</h2>
+          <ol>
+            <li><strong>从对话进入制作：</strong>讨论想法、生成剧本与分镜，支持创意、剧本和小说流程。</li>
+            <li><strong>按环节选择执行者：</strong>API 与本地 Agent 统一配置，目前实际适配 Codex CLI、Claude Code 和 Pi。</li>
+            <li><strong>逐镜控制的导演台：</strong>编辑描述、时长、统一风格和首尾帧，保留多次生成版本，预览后合并导出。</li>
+            <li><strong>已有视频的 Agent 剪辑：</strong>导入素材，生成裁切与排序方案，确认后由 FFmpeg 处理成片。</li>
+            <li><strong>简洁的中文桌面交互：</strong>双胶囊栏承担导航和常用操作，串联对话、素材与镜头制作。</li>
+          </ol>
+        </section>
+        <section id="status" aria-labelledby="status-title">
+          <h2 id="status-title">当前状态</h2>
+          <p>FrameFlow 当前作为开源测试版提供源码，可按 README 在 macOS 上构建桌面应用。创作流程已整理进中文界面，接入自己使用的 Agent 或模型服务后，可以继续验证生成效果与剪辑体验。</p>
+          <p class="delivery-note">新视频生成需要配置视频 API。已有视频的 Agent 剪辑依据文字要求和素材时长生成方案，经用户确认后执行；不默认具备观看视频的能力。本地 Agent 沿用自身连接的模型与服务，本地接入不代表离线运行。</p>
+        </section>
+      </article>
+      <footer>
+        <span>项目记录更新于 <time datetime="2026-10-12">2026.10.12</time></span>
+        <a href="https://github.com/17lijunyi/FrameFlow" target="_blank" rel="noopener noreferrer">FrameFlow · GitHub ↗</a>
+      </footer>
+    </main>
+  </body>
+</html>

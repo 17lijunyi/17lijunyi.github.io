@@ -173,7 +173,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/chaichai",
     "copy": "交给 AI 助手的本地软件拆解技能，支持应用结构、代码与运行行为分析，并通过 CLI 和 MCP 返回可追溯的证据。",
     "action": "查看开源技能",
-    "cover": "https://raw.githubusercontent.com/17lijunyi/chaichai/main/docs/assets/cover.png",
+    "cover": "https://raw.githubusercontent.com/17lijunyi/chaichai/main/docs/assets/cover.png?v=63fe22a17871",
     "index": "04",
     "meta": "Skills / CLI + MCP"
   },

@@ -168,6 +168,17 @@ export const works = [
   },
   {
     "kind": "tool",
+    "title": "拆拆 ChaiChai",
+    "detailUrl": "https://github.com/17lijunyi/chaichai",
+    "url": "https://github.com/17lijunyi/chaichai",
+    "copy": "交给 AI 助手的本地软件拆解技能，支持应用结构、代码与运行行为分析，并通过 CLI 和 MCP 返回可追溯的证据。",
+    "action": "查看开源技能",
+    "cover": "https://raw.githubusercontent.com/17lijunyi/chaichai/main/docs/assets/cover.png",
+    "index": "04",
+    "meta": "Skills / CLI + MCP"
+  },
+  {
+    "kind": "tool",
     "title": "看山知识库",
     "detailUrl": "https://github.com/17lijunyi/kanshan-kb",
     "url": "https://github.com/17lijunyi/kanshan-kb",
@@ -175,7 +186,7 @@ export const works = [
     "action": "查看知识库",
     "coverEyebrow": "创作 · 运营 · 知识库",
     "coverTagline": "让每一步改进，有据可循。",
-    "index": "04",
+    "index": "05",
     "meta": "创作 / 知识库"
   },
   {

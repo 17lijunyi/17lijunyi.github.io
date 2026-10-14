@@ -133,10 +133,17 @@
 .work-product-cover-link[href="https://github.com/17lijunyi/orbi"] { background: #faf7fa; }
 .work-product-cover-link[href="https://github.com/17lijunyi/orbi"] > img { object-fit: contain; padding: 14px; }
 
-/* Preserve the complete Foundry app icon. */
-.work-product-cover-link[href="https://github.com/17lijunyi/Foundry"] { background: #f0f5f9; }
-.work-product-cover-link[href="https://github.com/17lijunyi/Foundry"] > img { object-fit: contain; padding: 14px; }
-
-/* Preserve the full FrameFlow clapperboard icon in the project card. */
-.work-product-cover-link[href="/projects/frameflow/"] { background: #f3f4f5; }
-.work-product-cover-link[href="/projects/frameflow/"] > img { object-fit: contain; padding: 14px; }
+/* Repository-backed Skills can show their canonical cover in the same carousel. */
+.work-tool-card > .work-tool-cover-link {
+  display: block;
+  flex: 0 0 42%;
+  height: 42%;
+  overflow: hidden;
+  background: #faf9f6;
+}
+.work-tool-cover-link > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

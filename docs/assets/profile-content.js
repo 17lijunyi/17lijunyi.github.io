@@ -1,6 +1,6 @@
 import {normalizeArticles} from "./article-utils.js";
 // Profile: https://17lijunyi.github.io/ and its embedded GitHub README.
-// Articles: all 18 published records from 少玩多学AI, verified on 2026-09-20.
+// Articles: all 18 published records from 小淇说, verified on 2026-09-20.
 export const profile = {
   "name": "李俊祎",
   "latin": "李俊祎",
@@ -12,7 +12,7 @@ export const profile = {
   "tagline": "把 AI 做成真正有人用的产品",
   "summary": "桌面办公 Agent · 产品设计与评测",
   "bio": "我关注 Agent 如何完成真实的办公任务。参与过本地资料汇总 Agent 的产品建设，负责使用场景、任务流程、授权反馈和结果验收。通过固定任务评测与内部试用，推动产品持续迭代。",
-  "byline": "公众号作者  少玩多学AI",
+  "byline": "公众号作者  小淇说",
   "email": "lijunyi2026setoff@gmail.com",
   "github": "https://github.com/17lijunyi",
   "website": "https://17lijunyi.github.io/",
@@ -42,7 +42,7 @@ export const profile = {
     },
     {
       "label": "微信公众号",
-      "value": "少玩多学AI",
+      "value": "小淇说",
       "view": "notes",
       "icon": "notes",
       "external": false
@@ -412,7 +412,7 @@ export const boot = [
   },
   {
     "kind": "ok",
-    "text": "连接公开创作：少玩多学AI"
+    "text": "连接公开创作：小淇说"
   },
   {
     "kind": "ok",
@@ -462,7 +462,7 @@ export const intro = [
   },
   {
     "kind": "out",
-    "text": "公众号作者  少玩多学AI"
+    "text": "公众号作者  小淇说"
   },
   {
     "kind": "blank"

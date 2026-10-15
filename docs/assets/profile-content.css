@@ -151,3 +151,13 @@
 /* Show the complete PE Studio category window, including its title bar. */
 .work-product-cover-link[href="https://github.com/17lijunyi/pe-studio"] { background: #faf9f6; }
 .work-product-cover-link[href="https://github.com/17lijunyi/pe-studio"] > img { object-fit: contain; }
+
+/* Portfolio window covers include titles and category bars; show every edge. */
+.work-product-card > .work-product-cover-link {
+  background: #faf9f6;
+}
+.work-product-card > .work-product-cover-link > img {
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+}

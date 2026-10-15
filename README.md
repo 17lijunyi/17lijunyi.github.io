@@ -5,6 +5,8 @@
 ## 内容维护
 
 - `docs/assets/profile-content.js` 保存个人介绍、项目卡片与文章数据。
+- `docs/assets/project-covers/` 保存与 GitHub 精选项目一致的完整窗口封面；图片引用附带内容哈希，产品和 Skills 均完整显示分类顶栏。
+- 个人项目共 10 项，PE Studio 排在首张，随后为 FrameFlow、Foundry 与其他已有产品。
 - `docs/assets/index-pages.js` 为现有页面运行代码，开头导入内容模块。
 - 修改内容后，同时更新 `docs/index.html` 的脚本版本参数与上述内容模块的导入参数，避免缓存旧内容。
 - 不要用早期个人网站的完整 `dist/` 覆盖此仓库，维护时先核对最新远程提交，保留其他项目、文章及交互。
@@ -19,6 +21,6 @@
 
 ## FrameFlow 项目介绍
 
-2026-10-12 新增 FrameFlow 项目卡片与介绍页：`docs/projects/frameflow/index.html`。卡片排在个人项目首位，介绍页围绕创作思路、交互设计与开发过程说明功能、价值和亮点，与 [FrameFlow README](https://github.com/17lijunyi/FrameFlow) 保持一致。
+2026-10-12 新增 FrameFlow 项目卡片与介绍页：`docs/projects/frameflow/index.html`。通过个人项目卡片进入介绍页，围绕创作思路、交互设计与开发过程说明功能、价值和亮点，与 [FrameFlow README](https://github.com/17lijunyi/FrameFlow) 保持一致。
 
 项目当前为开源测试版，提供 macOS 源码构建方式；新视频生成需要配置视频 API，已有视频的 Agent 剪辑先生成方案，经用户确认后由 FFmpeg 处理。页面没有将 Agent 接入表述为离线运行或视频视觉理解能力。

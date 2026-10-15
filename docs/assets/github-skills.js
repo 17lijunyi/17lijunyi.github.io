@@ -1,7 +1,7 @@
 // Public metadata only: no credentials, skill execution, or generated HTML.
 const repository = "17lijunyi/17lijunyi";
 const cacheKey = "lijunyi:github-skills:v1";
-const cacheVersion = "2026-10-06-resume-priority";
+const cacheVersion = "2026-10-15-project-window-covers";
 const cacheLifetime = 5 * 60 * 1000;
 const skillPath = /^skills\/[a-zA-Z0-9][a-zA-Z0-9._-]{0,99}$/;
 const featuredSkills = ["skills/ai-product-resume-edit"];
@@ -40,7 +40,7 @@ function scalar(text, key) {
   return "";
 }
 
-function card(item) {
+function card(item, bundledCovers) {
   if (!item || !skillPath.test(item.sourcePath ?? "") ||
       typeof item.title !== "string" || !item.title.trim() ||
       typeof item.copy !== "string" || !item.copy.trim()) return null;
@@ -52,14 +52,15 @@ function card(item) {
     title: item.title.trim().slice(0, 120),
     copy: item.copy.trim().slice(0, 600),
     url: `https://github.com/${repository}/tree/main/${item.sourcePath}`,
-    action: "查看开源技能"
+    action: "查看开源技能",
+    ...(bundledCovers?.has(item.sourcePath) ? {cover: bundledCovers.get(item.sourcePath)} : {})
   };
 }
 
-function catalogue(items) {
+function catalogue(items, bundledCovers) {
   const unique = new Map();
   for (const item of items) {
-    const entry = card(item);
+    const entry = card(item, bundledCovers);
     if (entry && !unique.has(entry.sourcePath)) unique.set(entry.sourcePath, entry);
   }
   // Apply the same priority to bundled, cached, and freshly synced entries.
@@ -74,7 +75,14 @@ export function createSkillStore(fallback, {
   now = Date.now,
   timeoutMs = 8000
 } = {}) {
-  let entries = catalogue(fallback);
+  // Covers come only from bundled configuration, never cached or API metadata.
+  const bundledCovers = new Map();
+  for (const item of fallback) {
+    if (card(item) && typeof item.cover === "string" && item.cover.trim() && !bundledCovers.has(item.sourcePath)) {
+      bundledCovers.set(item.sourcePath, item.cover.trim());
+    }
+  }
+  let entries = catalogue(fallback, bundledCovers);
   let checkedAt = 0;
   let pending = null;
   const listeners = new Set();
@@ -82,7 +90,7 @@ export function createSkillStore(fallback, {
     const cached = JSON.parse(storage?.getItem(cacheKey) ?? "null");
     if (cached?.version === cacheVersion && Array.isArray(cached.entries) &&
         Number.isFinite(cached.checkedAt) && cached.checkedAt <= now()) {
-      const restored = catalogue(cached.entries);
+      const restored = catalogue(cached.entries, bundledCovers);
       if (restored.length) {
         entries = restored;
         checkedAt = cached.checkedAt;
@@ -129,7 +137,7 @@ export function createSkillStore(fallback, {
           return old ?? {sourcePath, title: sourcePath.split("/").pop(), copy: "查看此技能的功能介绍与使用方法。"};
         }
       }));
-      const updated = catalogue(next);
+      const updated = catalogue(next, bundledCovers);
       if (!updated.length) return false;
       checkedAt = now();
       if (JSON.stringify(updated) !== JSON.stringify(entries)) {

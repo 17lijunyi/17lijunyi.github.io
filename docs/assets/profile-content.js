@@ -53,6 +53,19 @@ export const profile = {
 export const works = [
   {
     "kind": "product",
+    "title": "PE Studio",
+    "detailUrl": "https://github.com/17lijunyi/pe-studio",
+    "url": "https://github.com/17lijunyi/pe-studio",
+    "copy": "面向 macOS 的提示词专家，支持三模型并行优化、A/B/C 随机盲测和 Jev 评审，并可接入本地 Agent，将提示词打磨、比较与评审放进同一工作台。",
+    "action": "查看 PE Studio 源码",
+    "coverEyebrow": "提示词优化 · 盲测 · 评审",
+    "coverTagline": "多模型打磨提示词，用盲测比较候选。",
+    "index": "01",
+    "meta": "个人项目 · 01",
+    "cover": "/assets/project-covers/pe-studio-window.png?v=61027e48952a"
+  },
+  {
+    "kind": "product",
     "title": "FrameFlow",
     "detailUrl": "/projects/frameflow/",
     "url": "/projects/frameflow/",
@@ -61,9 +74,9 @@ export const works = [
     "status": "开源测试版 · macOS",
     "coverEyebrow": "创作 · 分镜 · 剪辑",
     "coverTagline": "从想法到成片，让创作保留控制。",
-    "index": "01",
-    "meta": "个人项目 · 01",
-    "cover": "/assets/frameflow-cover.png"
+    "index": "02",
+    "meta": "个人项目 · 02",
+    "cover": "/assets/project-covers/frameflow-window.png?v=33e1d2070a72"
   },
   {
     "kind": "product",
@@ -74,22 +87,9 @@ export const works = [
     "action": "查看 Foundry 源码",
     "coverEyebrow": "需求 · 文档 · 模型对比",
     "coverTagline": "把想法、资料和 AI 协作，放进一个轻盈的产品工作台。",
-    "index": "02",
-    "meta": "个人项目 · 02",
-    "cover": "/assets/foundry-cover.png"
-  },
-  {
-    "kind": "product",
-    "title": "PE Studio",
-    "detailUrl": "https://github.com/17lijunyi/pe-studio",
-    "url": "https://github.com/17lijunyi/pe-studio",
-    "copy": "面向 macOS 的提示词专家，支持三模型并行优化、A/B/C 随机盲测和 Jev 评审，并可接入本地 Agent，将提示词打磨、比较与评审放进同一工作台。",
-    "action": "查看 PE Studio 源码",
-    "coverEyebrow": "提示词优化 · 盲测 · 评审",
-    "coverTagline": "多模型打磨提示词，用盲测比较候选。",
     "index": "03",
     "meta": "个人项目 · 03",
-    "cover": "/assets/pe-studio-cover.png?v=61027e48952a"
+    "cover": "/assets/project-covers/foundry-window.png?v=9fbdd1cdf409"
   },
   {
     "kind": "product",
@@ -98,7 +98,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/orbi",
     "copy": "我持续开发和维护的 macOS AI 工作台，将智能体、聊天与模型服务放进统一的桌面空间。独立胶囊提供待办、悬浮聊天、创建群聊与创建智能体入口；七款窗口背景搭配可 DIY 的毛绒星球形象，支持颜色、表情、配饰和随机组合。",
     "action": "查看 Orbi 源码",
-    "cover": "/assets/orbi-plush-cover.png?v=a74818bc31ab",
+    "cover": "/assets/project-covers/orbi-window.png?v=a74818bc31ab",
     "index": "04",
     "meta": "个人项目 · 04"
   },
@@ -109,7 +109,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/jianli",
     "copy": "一款面向 Mac 的中文简历应用，支持简历编辑、模板选择、实时预览、PDF 导出和 AI 辅助，搭配玻璃质感窗口与悬浮控件，内容保存在本机。",
     "action": "查看简励",
-    "cover": "/assets/jianli-cover.png",
+    "cover": "/assets/project-covers/jianli-window.png?v=cde8beb8f6fc",
     "index": "05",
     "meta": "个人项目 · 05"
   },
@@ -131,7 +131,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/xuanfudao",
     "copy": "把工作台藏进 Mac 顶部。整合 AI 任务、待办、笔记、项目抽屉与专注计时，采用柔焦玻璃界面，本地优先。",
     "action": "查看开源项目",
-    "cover": "/assets/xuanfudao-cover.png",
+    "cover": "/assets/project-covers/xuanfudao-window.png?v=0ffc18f7b293",
     "index": "07",
     "meta": "个人项目 · 07"
   },
@@ -142,7 +142,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/OvO",
     "copy": "免费的原生 macOS 翻译工具，支持划词、截图和输入翻译。内置苹果系统翻译，可接入 DeepSeek 与自定义 API，配备柔焦玻璃浮窗、历史记录与收藏。",
     "action": "查看 OvO",
-    "cover": "/assets/ovo-cover.png",
+    "cover": "/assets/project-covers/ovo-window.png?v=581d2a194540",
     "index": "08",
     "meta": "个人项目 · 08"
   },
@@ -177,7 +177,8 @@ export const works = [
     "copy": "面向 AI 产品经理、FDE 与转型求职者，在已有简历上修改表达、数据与排版",
     "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/ai-product-resume-edit",
     "action": "查看开源技能",
-    "index": "01"
+    "index": "01",
+    "cover": "/assets/project-covers/ai-product-resume-edit-window.png?v=e096e77509fd"
   },
   {
     "kind": "tool",
@@ -186,7 +187,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/chaichai",
     "copy": "交给 AI 助手的本地软件拆解技能，支持应用结构、代码与运行行为分析，并通过 CLI 和 MCP 返回可追溯的证据。",
     "action": "查看开源技能",
-    "cover": "https://raw.githubusercontent.com/17lijunyi/chaichai/main/docs/assets/cover.png?v=63fe22a17871",
+    "cover": "/assets/project-covers/chaichai-window.png?v=63fe22a17871",
     "index": "04",
     "meta": "Skills / CLI + MCP"
   },
@@ -200,7 +201,8 @@ export const works = [
     "coverEyebrow": "创作 · 运营 · 知识库",
     "coverTagline": "让每一步改进，有据可循。",
     "index": "05",
-    "meta": "创作 / 知识库"
+    "meta": "创作 / 知识库",
+    "cover": "/assets/project-covers/kanshan-kb-window.png?v=729789d64fd5"
   },
   {
     "index": "02",
@@ -210,7 +212,8 @@ export const works = [
     "title": "Muse10 美甲作品展示",
     "copy": "从参考照片生成十片母版、双手佩戴与细节特写，并制作可交互预览",
     "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/muse10-nail-visuals",
-    "action": "查看开源技能"
+    "action": "查看开源技能",
+    "cover": "/assets/project-covers/muse10-nail-visuals-window.png?v=065ce2417f1e"
   },
   {
     "index": "03",
@@ -220,7 +223,8 @@ export const works = [
     "title": "产品证据拆解",
     "copy": "基于真实证据，按用户、技术、模型、数据四层拆解数字产品",
     "url": "https://github.com/17lijunyi/17lijunyi/tree/main/skills/product-evidence-deconstruction",
-    "action": "查看开源技能"
+    "action": "查看开源技能",
+    "cover": "/assets/project-covers/product-evidence-deconstruction-window.png?v=ab5191a769fb"
   }
 ];
 

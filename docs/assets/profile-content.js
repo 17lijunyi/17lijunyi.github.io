@@ -85,7 +85,7 @@ export const works = [
     "url": "https://github.com/17lijunyi/orbi",
     "copy": "我持续开发和维护的 macOS AI 工作台，将智能体、聊天与模型服务放进统一的桌面空间。独立胶囊提供待办、悬浮聊天、创建群聊与创建智能体入口；七款窗口背景搭配可 DIY 的毛绒星球形象，支持颜色、表情、配饰和随机组合。",
     "action": "查看 Orbi 源码",
-    "cover": "/assets/orbi-plush-cover.png",
+    "cover": "/assets/orbi-plush-cover.png?v=a74818bc31ab",
     "index": "03",
     "meta": "个人项目 · 03"
   },

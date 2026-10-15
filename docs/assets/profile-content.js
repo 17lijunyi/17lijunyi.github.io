@@ -80,14 +80,27 @@ export const works = [
   },
   {
     "kind": "product",
+    "title": "PE Studio",
+    "detailUrl": "https://github.com/17lijunyi/pe-studio",
+    "url": "https://github.com/17lijunyi/pe-studio",
+    "copy": "面向 macOS 的提示词专家，支持三模型并行优化、A/B/C 随机盲测和 Jev 评审，并可接入本地 Agent，将提示词打磨、比较与评审放进同一工作台。",
+    "action": "查看 PE Studio 源码",
+    "coverEyebrow": "提示词优化 · 盲测 · 评审",
+    "coverTagline": "多模型打磨提示词，用盲测比较候选。",
+    "index": "03",
+    "meta": "个人项目 · 03",
+    "cover": "/assets/pe-studio-cover.png?v=61027e48952a"
+  },
+  {
+    "kind": "product",
     "title": "Orbi",
     "detailUrl": "https://github.com/17lijunyi/orbi",
     "url": "https://github.com/17lijunyi/orbi",
     "copy": "我持续开发和维护的 macOS AI 工作台，将智能体、聊天与模型服务放进统一的桌面空间。独立胶囊提供待办、悬浮聊天、创建群聊与创建智能体入口；七款窗口背景搭配可 DIY 的毛绒星球形象，支持颜色、表情、配饰和随机组合。",
     "action": "查看 Orbi 源码",
     "cover": "/assets/orbi-plush-cover.png?v=a74818bc31ab",
-    "index": "03",
-    "meta": "个人项目 · 03"
+    "index": "04",
+    "meta": "个人项目 · 04"
   },
   {
     "kind": "product",
@@ -97,8 +110,8 @@ export const works = [
     "copy": "一款面向 Mac 的中文简历应用，支持简历编辑、模板选择、实时预览、PDF 导出和 AI 辅助，搭配玻璃质感窗口与悬浮控件，内容保存在本机。",
     "action": "查看简励",
     "cover": "/assets/jianli-cover.png",
-    "index": "04",
-    "meta": "个人项目 · 04"
+    "index": "05",
+    "meta": "个人项目 · 05"
   },
   {
     "kind": "product",
@@ -108,8 +121,8 @@ export const works = [
     "copy": "中文 AI 桌面工作台，将对话、项目文件、助手与模型对比放在一起。采用纸艺界面，支持接入 Codex CLI、Claude Code 和 Pi 等助手；基于产品经理工作台、AionUi 与 AionCore 二次开发。",
     "action": "查看造物台",
     "cover": "/assets/zaowutai-cover.png",
-    "index": "05",
-    "meta": "个人项目 · 05"
+    "index": "06",
+    "meta": "个人项目 · 06"
   },
   {
     "kind": "product",
@@ -119,8 +132,8 @@ export const works = [
     "copy": "把工作台藏进 Mac 顶部。整合 AI 任务、待办、笔记、项目抽屉与专注计时，采用柔焦玻璃界面，本地优先。",
     "action": "查看开源项目",
     "cover": "/assets/xuanfudao-cover.png",
-    "index": "06",
-    "meta": "个人项目 · 06"
+    "index": "07",
+    "meta": "个人项目 · 07"
   },
   {
     "kind": "product",
@@ -130,13 +143,13 @@ export const works = [
     "copy": "免费的原生 macOS 翻译工具，支持划词、截图和输入翻译。内置苹果系统翻译，可接入 DeepSeek 与自定义 API，配备柔焦玻璃浮窗、历史记录与收藏。",
     "action": "查看 OvO",
     "cover": "/assets/ovo-cover.png",
-    "index": "07",
-    "meta": "个人项目 · 07"
+    "index": "08",
+    "meta": "个人项目 · 08"
   },
   {
-    "index": "08",
+    "index": "09",
     "kind": "product",
-    "meta": "个人项目 · 08",
+    "meta": "个人项目 · 09",
     "title": "Muse10",
     "detailUrl": "https://muse10-atelier.earthy-frost-9266.chatgpt.site/",
     "copy": "高端美甲与穿戴甲定制品牌，探索 AI 定制与 AI 试戴，将个性化设计与上手预览融入专属美甲体验。",
@@ -145,9 +158,9 @@ export const works = [
     "cover": "/assets/muse10-cover.png"
   },
   {
-    "index": "09",
+    "index": "10",
     "kind": "product",
-    "meta": "个人项目 · 09",
+    "meta": "个人项目 · 10",
     "title": "幻想之境",
     "detailUrl": "/projects/huanxiangzhijing/",
     "copy": "独立发起的 AI 故事共创项目，从个人小说与短剧灵感需求出发，设计三段候选、虚拟同行者与故事记忆，并扩展长篇共创和自动初稿流程。负责产品定位、交互设计、写作约束及 AI 协作研发。",

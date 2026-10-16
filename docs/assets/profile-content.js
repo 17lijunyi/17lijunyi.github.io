@@ -192,6 +192,28 @@ export const works = [
     "meta": "Skills / CLI + MCP"
   },
   {
+    "kind": "document",
+    "title": "产品蓝图",
+    "detailUrl": "https://github.com/17lijunyi/product-blueprint",
+    "url": "https://github.com/17lijunyi/product-blueprint",
+    "copy": "把想法、PRD 或已有代码整理成 Agent 产品方案，提供需求拆解、组件选型、七层架构、差距报告与项目骨架。",
+    "action": "阅读文档与使用指南",
+    "index": "01",
+    "meta": "文档",
+    "cover": "/assets/project-covers/product-blueprint-window.png?v=ccaa25ee1971"
+  },
+  {
+    "kind": "document",
+    "title": "技术栈手册",
+    "detailUrl": "https://github.com/17lijunyi/tech-stack-handbook",
+    "url": "https://github.com/17lijunyi/tech-stack-handbook",
+    "copy": "面向产品经理与学生的 AI 产品开发文档工具包，用三份技术手册、AI 规则卡和 PRD 模板串起从需求到上线的六阶段流程。",
+    "action": "阅读文档与使用指南",
+    "index": "02",
+    "meta": "文档",
+    "cover": "/assets/project-covers/tech-stack-handbook-window.png?v=1f010d42602a"
+  },
+  {
     "kind": "tool",
     "title": "看山知识库",
     "detailUrl": "https://github.com/17lijunyi/kanshan-kb",

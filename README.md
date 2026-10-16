@@ -5,8 +5,9 @@
 ## 内容维护
 
 - `docs/assets/profile-content.js` 保存个人介绍、项目卡片与文章数据。
-- `docs/assets/project-covers/` 保存与 GitHub 精选项目一致的完整窗口封面；图片引用附带内容哈希，产品和 Skills 均完整显示分类顶栏。
+- `docs/assets/project-covers/` 保存与 GitHub 精选项目一致的完整窗口封面；图片引用附带内容哈希，产品、Skills 和文档均完整显示分类顶栏。
 - 个人项目共 10 项，PE Studio 排在首张，随后为 FrameFlow、Foundry 与其他已有产品。
+- “工具与技能”保留现有轮播，在全部 Skills（含拆拆）之后、看山知识库之前收录“产品蓝图”和“技术栈手册”两份文档；文档使用独立的 `kind: document` 数据和“文档”标识，不参加 GitHub Skills 元数据替换。
 - `docs/assets/index-pages.js` 为现有页面运行代码，开头导入内容模块。
 - 修改内容后，同时更新 `docs/index.html` 的脚本版本参数与上述内容模块的导入参数，避免缓存旧内容。
 - 不要用早期个人网站的完整 `dist/` 覆盖此仓库，维护时先核对最新远程提交，保留其他项目、文章及交互。
